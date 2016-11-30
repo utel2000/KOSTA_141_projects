@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex5_div.html</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* nth-child로 class중에서 몇 번째 인덱스에 접근할 것인지 결정 */
+            #wrap { width: 600px; height: 300px; background: orange; }
+            .box { width: 100px; height: 100px;
+            position: absolute;
+            }
+            .box:nth-child(1) {
+                background: red;
+                left:10px; top: 10px;
+            }
+            .box:nth-child(2){
+                background: green;
+                left: 50px; top: 50px;
+            }
+            .box:nth-child(3){
+                background: blue;
+                left: 90px; top: 90px;
+            }
+        </style>
+        <script>
+            var l=10; // 전역변수
+            var t=10; // 전역변수
+            var i;
+            function test(){
+                document.getElementById("b1").style.left = (l+=10)+"px";
+                console.log(l);
+                if (l >= 510) {
+                    clearInterval(i);
+                }
+            }
+            function test2(){
+                document.getElementById("b1").style.top = (t+=10)+"px";
+            }
+            function next(){
+                i = setInterval(test, 0);
+                // setInterval(호출할 함수,초);
+                // 지정한 초씩 함수를 지속적으로 호출하는 내장함수
+                // 함수가 진행되는 동안 다음 줄의 코드로 넘어가지 않는다.
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="box" id="b1">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <input type="button" value=" → " onclick="next()">
+        <input type="button" value=" ↓ " onclick="test2()">
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex1First.html</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>datalist연습</legend>
+                <label for="ss">Homepage:</label>
+                <!-- type 속성 뒤에 값은 w3c 참고, url은 url만 들어 올 수 있음,
+                id는 요소의 식별자(중복하면 안됨),
+                *** name은 폼 데이터가 전송될 때 사용자가 입력한 값의 이름
+                (서버쪽에서는 파라미터 변수명임)
+                -->
+                <input type="url" id="ss" name="ss"
+                       list="s_data" required>
+                <datalist id="s_data">
+                    <option value="http://www.shinhan.com"
+                            label="신한"/>
+                    <option value="http://naver.com"
+                            label="네이버"/>
+                    <option value="http://www.kosta.or.kr"
+                            label="kosta"/>
+                </datalist>
+                <p><button type="submit">SEND</button></p>
+            </fieldset>
+        </form>
+    </body>
+</html>

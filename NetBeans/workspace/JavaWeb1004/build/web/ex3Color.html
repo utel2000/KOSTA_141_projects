@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>ex3Color.html</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // javascript : 브라우저별로 엔진(해석기)가 다르다.
+            // 주로 사용자의 요청을 감지하거나 상호 작용요소의
+            // 동적 데이터의 처리에 자주 사용된다.
+            // 서버측 언어가 아니라 클라이언트측 언어이기 때문에
+            // 소스 보안이 어렵다. (해석기반이 클라이언트에 있다.)
+            // 간단하게 따라해보기.
+            // -- 함수 정의 후 호출해야 한다.
+            function change() {
+                // alert("함수 동작!");
+                // alert("선택한 값 : " + document.getElementById("cc").value);
+                // 변수 선언
+                var color=document.getElementById("cc").value;
+                document.getElementById("target").style.backgroundColor=color;
+            }
+        </script>
+    </head>
+    <body>
+        <!-- div는 블록 태그면서, layout으로도 사용이 됨 -->
+        <div id ="target" style="width: 600px;">
+            <form>
+                <fieldset>
+                    <label for="cc">color:</label>
+                    <input type="color" name="cc"
+                           id="cc" onchange="change()"/> <!-- onchange: event -->
+                    <p><button type="submit">SEND</button></p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

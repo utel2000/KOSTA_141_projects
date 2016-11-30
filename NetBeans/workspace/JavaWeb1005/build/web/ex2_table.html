@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex2_table.html</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #wrap{ width: 300px; margin: auto;}
+            table { width: 100%; border: 1px solid;}
+            tr{background: orange}
+            td{color:white}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <table>
+                <tr>
+                    <td>1</td><td>2</td><td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td>11</td><td>22</td>
+                </tr>
+                <tr>
+                    <td colspan="3">***</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

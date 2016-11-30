@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex5_imgsc</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        div { width: 580px; margin: auto;}
+        #target{ width: 560px; height: 330px;}
+        /* id가 content아래의 모든 img태그 */
+        #content img{width: 100px; height: 80px;
+        cursor: pointer}
+        </style>
+        <script>
+            function changeImg(imgSrc){
+                document.getElementById("target").src=imgSrc
+            }
+        </script>
+            
+    </head>
+    <body>
+        <div id="wrap">
+            <img src="img/5.jpg" id="target">
+        </div>
+        <div id="content">
+<!--            <img src="img/1.jpg" onclick="changeImg(this.src)">
+            <img src="img/2.jpg" onclick="changeImg(this.src)">
+            <img src="img/3.png" onclick="changeImg(this.src)">
+            <img src="img/4.jpg" onclick="changeImg(this.src)">
+            <img src="img/5.jpg" onclick="changeImg(this.src)">-->
+            
+            <img src="img/1.jpg" onmouseover="changeImg(this.src)">
+            <img src="img/2.jpg" onmouseover="changeImg(this.src)">
+            <img src="img/3.png" onmouseover="changeImg(this.src)">
+            <img src="img/4.jpg" onmouseover="changeImg(this.src)">
+            <img src="img/5.jpg" onmouseover="changeImg(this.src)">
+        </div>
+    </body>
+</html>

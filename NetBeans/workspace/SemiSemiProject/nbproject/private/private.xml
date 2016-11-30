@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/dao/ProductDAO.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>374</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/abcmart/ShoppingJFrame.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/vo/ProductVO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/dao/OrderDAO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/vo/MemberVO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/connectDB/Conn.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/dao/ProductDAO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/vo/OrderVO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/dao/MemberDAO.java</file>
+            <file>file:/D:/Kosta141/Java/workspace/SemiSemiProject/src/model/JTableModel.java</file>
+        </group>
+    </open-files>
+</project-private>

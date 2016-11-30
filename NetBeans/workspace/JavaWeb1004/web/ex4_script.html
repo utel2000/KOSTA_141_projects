@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex4_script.html</title>
+        <!-- point
+        img 태그를 사용한다. * div를 사용해서 레이아웃을 make
+        자바스크립트로 img객체에 값을 id값으로 식별한다.
+        버튼 객체를 클릭할 때 이벤트를 처리한다.
+            - 버튼이 클릭 될 때마다 on/off (img객체의 id값으로)
+            - 이미지를 교체한다.
+        -->
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* id로 접근하는 방법 #아이디 ***
+            div를 메인 레이아웃으로 중앙에 정렬 할 때
+            width.margin:auto
+            */
+            #wrap, #btn{
+                width: 350px; border: 1px solid red;
+                margin: auto; /* border밖의 면적 */
+                text-align: center; /* div안의 내용을 정렬 */
+            }
+            /*            input{ background-color: orange; width: 100px;
+                        color: #ffffff; height: 35px;
+                        } */
+            #btnOn{
+                background-color: red; width: 100px;
+                color: #ffffff; height: 35px;
+            }
+            #btnOff{
+                background-color: orange; width: 100px;
+                color: #ffffff; height: 35px;
+            }
+        </style>
+        <!-- 버튼을 이미지 처럼 중앙에 배치하고, on은 배경을 Red,
+        Off는 Orange -->
+        <script>
+            function changeImg(imgSrc){
+                // imgSrc 값은 버튼이 클릭될 때 on/off이미지 경로.
+                // 값을 myBlub에 대입 : src란 속성을 사용
+                document.getElementById("myBulb").src=imgSrc;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <img src = "img/pic_bulboff.gif" id="myBulb">
+        </div>
+        <div id="btn">
+            <input type="button" value="On" id="btnOn" onclick="changeImg('img/pic_bulbon.gif')">&nbsp;
+            <input type="button" value="Off" id="btnOff" onclick="changeImg('img/pic_bulboff.gif')">
+        </div>
+    </body>
+</html>

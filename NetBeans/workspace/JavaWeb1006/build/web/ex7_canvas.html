@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex7_canvas</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // 이미지, 동영상, html구조(dom)까지 모두 로딩 된 후
+            // 호출되는 메서드
+            window.onload = function(){
+                alert("test");
+                    // 1) 캔버스 얻기
+                    var can = document.getElementById("can1");
+                    // 2) 2D그림을 그릴 객체 구하기.
+                    var ctx = can.getContext("2d");
+                    if(ctx){
+                        // 3) 원하는 그리기 수행
+                        ctx.fillStyle = "green"; // 색상 지정
+                        ctx.fillRect(10, 25, 100, 100); // x, y, w, h
+                        ctx.lineWidth = 5;
+                        ctx.strokeStyle = "rgba(0,0,0,0.5)";
+                        // 그리고자 하는 속성설정을
+                        // 마쳤으니 그리기 API함수 호출
+                        ctx.strokeRect(5, 20, 110, 110);
+                        
+                        ctx.fillStyle = "red"; // 색상 지정
+                        ctx.fillRect(150, 25, 100, 100); // x, y, w, h
+                        ctx.lineWidth = 5;
+                        ctx.strokeStyle = "rgba(0,0,0,0.5)";
+                        ctx.strokeRect(145, 20, 110, 110);
+                    }
+    }
+        </script>
+    </head>
+    <body>
+        <canvas id="can1" width="400" height="300">
+                캔버스를 지원하지 않습니다.
+    </body>
+</html>

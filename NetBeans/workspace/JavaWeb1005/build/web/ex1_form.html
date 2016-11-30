@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+    ex1_form.html
+    form 태그의 속성 학습.
+    action으로 정의한 Servlet을 작성하여
+    폼의 데이터를 전송 및 처리하는 방법(V.01-Servlet처리)을 학습.
+-->
+<html>
+    <head>
+        <title>ex1_form.html</title>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function chkForm() {
+                // alert("버튼을 clicked!!");
+                // 사용자가 입력한 아이디의 값
+                var idv = document.getElementById("id").value;
+                var pwdv = document.getElementById("pwd").value;
+                // if문으로 제어, == 보다 === 을 사용 권장
+                if (idv === "") {
+                    document.getElementById("idTarget").innerHTML = "아이디 입력";
+                    document.getElementById("idTarget").style.color = "red";
+                    document.getElementById("id").focus(); // 커서이동 
+//                    return false; // 함수를 종료
+                } else {
+                    document.getElementById("idTarget").style.display = "none";
+                }
+                if (pwdv === "") {
+                    document.getElementById("pwdTarget").innerHTML = "비번 입력";
+                    document.getElementById("pwdTarget").style.color = "blue";
+                    document.getElementById("pwd").focus(); // 커서이동 
+//                    return false; // 함수를 종료
+                } else {
+                    document.getElementById("pwdTarget").style.display = "none";
+                }
+                    // 폼객체를 읽어와서 submit() 호출해서 데이터를 action으로 전송
+                    document.getElementById("f").submit();
+            }
+        </script>
+    </head>
+    <body>
+        <div style="width: 350px; margin: auto">
+            <!-- 
+                action : form의 데이터를 전송할 서버측 주소
+                method : 데이터를 전송할 방식 (get/post)
+                name : form이 전송될 때 전달되는 실제 데이터의 이름.
+                value : text, password, radio, checkbox 등의 값을 설정하는 속성.
+            -->
+            <form method="post" action="Ex1_Server" id="f">
+                아이디 : <input type="text" name="id" id="id"><br />
+                <p id="idTarget"></p>
+                비밀번호 : <input type="password" name="pwd" id="pwd"><br />
+                <p id="pwdTarget"></p>
+                권한 : <select name="priv" id="priv">
+                    <option value="admin">관리자</option>
+                    <option value="user" selected="selected">사용자</option>
+                    <option value="guest">방문객</option>
+                </select><br />
+                <input type="button" value="send" onclick="chkForm()">
+            </form>
+        </div>
+    </body>
+</html>
