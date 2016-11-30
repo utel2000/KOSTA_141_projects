@@ -1,0 +1,12 @@
+package vo;
+public class PageVO {
+	private int currentPage;
+	private int currentBlock;
+	private int rowsPerPage;
+	private int pagesPerBlock;
+	private int totalRows;
+	private int totalPages;
+	private int totalBlocks;
+	private int StartRow;
+	private int EndRow;
+}

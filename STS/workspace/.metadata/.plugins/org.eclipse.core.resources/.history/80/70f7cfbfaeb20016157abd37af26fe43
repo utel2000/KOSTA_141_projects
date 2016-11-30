@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>template.jsp</title>
+<link rel="stylesheet" type="text/css" href="resources/css/basic.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+<script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.0.0rc1.js"></script>
+<script src="resources/js/basic.js"></script>
+<script src="resources/js/vote.js"></script>
+</head>
+<body>
+
+</body>
+</html>

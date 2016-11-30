@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<context:annotation-config />
+	<!-- target 빈 만들기 -->
+	<bean id="msg" class="java.lang.String">
+		<constructor-arg>
+			<value>순대국</value>
+		</constructor-arg>
+	</bean>
+	<bean id="target" class="ex1.MyBeanImple"/>
+	<!-- Advice 빈 만들기 -->
+	<bean id="loggerBeforeAdvice" class="ex1.MyBeanBeforeAdvice"/>	
+	<bean id="loggerAfterAdvice" class="ex1.MyAfterAdvice"/>
+	<bean id="loggerPointCut" class="org.springframework.aop.aspectj.AspectJExpressionPointcut">
+		<!-- ..이 없으면 인자가 하나도 없는 메서드를 의미. -->
+		<!-- ..이 있으면 인자가 하나도 없는 메서드 + 인자가 있는 메서드를 의미. -->
+		<property name="expression" value="execution(* myGet*(..))"/>
+	</bean>	
+	<bean id="loggerAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="loggerBeforeAdvice"/>
+		<property name="pointcut" ref="loggerPointCut"/>
+	</bean>
+	<bean id="loggerAdvisor2" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="loggerAfterAdvice"/>
+		<property name="pointcut" ref="loggerPointCut"/>
+	</bean>
+	<bean id="pfBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="target"/>
+		<property name="interceptorNames">
+			<list>
+				<value>loggerAdvisor</value>
+				<value>loggerAdvisor2</value>
+			</list>
+		</property>
+	</bean>
+</beans>

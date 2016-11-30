@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [18/Nov/2016:18:20:04 +0900] "GET /spring_di_1117/WEB-INF/classes/ex1/Ex1_AutoWiredService.java HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [18/Nov/2016:18:20:04 +0900] "GET /favicon.ico HTTP/1.1" 404 1022

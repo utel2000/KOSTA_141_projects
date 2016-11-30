@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<!-- body와 나머지 tiles들을 붙여주는 역할을 하는 파일 -->
+<!-- tiles의 핵심 환경설정 -->
+<tiles-definitions>
+	<definition name="defaultTemplate" template="/WEB-INF/template/default/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/template/default/header.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/template/default/footer.jsp"/>
+	</definition>
+	
+	<!-- 모든 요청에 대해  defaultTemplate을 상속받음 -->
+	<definition name="**" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/{1}.jsp" />
+	</definition>
+	<definition name="/WEB-INF/views/bbs/*" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/bbs/{1}.jsp" />
+	</definition>
+</tiles-definitions>

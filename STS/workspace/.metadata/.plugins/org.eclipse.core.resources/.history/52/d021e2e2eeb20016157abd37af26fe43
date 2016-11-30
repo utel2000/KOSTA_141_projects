@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vote">
+	<insert id="voteAdd" parameterType="vvo">
+		insert into
+			vote (num, sub, qt, vsub1, vsub2
+			<if test="qt == 2">
+				) values(vote_seq.nextVal, #{sub}, #{qt}, #{vsub1}, #{vsub2}
+			</if>
+			<if test="qt == 3">
+				, vsub3) values(vote_seq.nextVal, #{sub}, #{qt}, #{vsub1}, #{vsub2}, #{vsub3}
+			</if>
+			)
+	</insert>
+	<select id="voteList" resultType="vvo">
+		select
+			*
+		from
+			vote
+		order by
+			1 desc
+	</select>
+	<select id="voteDetail" parameterType="int" resultType="vvo">
+		select
+			*
+		from
+			vote
+		where
+			num = #{num}
+	</select>
+	<!-- 설문에 대한 항목을 증가 하기 위한 쿼리 -->
+	<update id="voteUpdate" parameterType="vvo">
+		update
+			vote
+		set
+			<if test="voteChk == 1">
+				vcnt1 = vcnt1 + 1
+			</if>
+			<if test="voteChk == 2">
+				vcnt2 = vcnt2 + 1
+			</if>
+			<if test="voteChk == 3">
+				vcnt3 = vcnt3 + 1
+			</if>
+		where
+			num = #{num}
+	</update>
+	<select id="voteResult" parameterType="int" resultType="vvo">
+		select
+			*
+		from
+			vote
+		where
+			num = #{num}
+	</select>
+</mapper>

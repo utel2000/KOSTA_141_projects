@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="propSuper" class="ex2.Ex3_Properties" abstract="true">
+		<property name="prop">
+			<props>
+				<prop key="hi">hello?</prop>
+				<prop key="ok">good.</prop>
+				<prop key="bye">c u again~</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="propSub" parent="propSuper">
+		<property name="prop">
+			<props>
+				<prop key="olleh">KT</prop>
+				<prop key="innovation">SKT</prop>
+				<prop key="display">LG</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

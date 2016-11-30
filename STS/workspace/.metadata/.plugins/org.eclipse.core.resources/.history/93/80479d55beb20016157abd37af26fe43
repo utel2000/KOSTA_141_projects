@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+	<ul>
+		<li><a href="mykosta.kos?com=index">Home</a></li>
+		<li><a href="mykosta">로그인</a></li>
+		<li><a href="mykosta.kos?com=index">설문조사 예제</a></li>
+		<li><a href="mykosta.kos?com=index">Profile</a></li>
+		<li><a href="mykosta.kos?com=index">Contact</a></li>
+	</ul>

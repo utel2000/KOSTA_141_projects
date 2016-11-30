@@ -1,0 +1,14 @@
+package or.kosta.spring.dao;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import vo.Bbs1VO;
+@Repository
+public class BbsDAO {
+	@Autowired
+	private SqlSessionTemplate sst;
+	public void insertBbs1(Bbs1VO bvo) {
+		sst.insert("bbs1.insert", bvo);
+	}
+}

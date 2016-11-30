@@ -1,0 +1,19 @@
+package or.kosta.spring.service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import or.kosta.spring.dao.CustomerDAO;
+import or.kosta.spring.dao.MemberDAO;
+import or.kosta.vo.CustomerVO;
+import or.kosta.vo.MemberVO;
+@Service
+public class ServiceImple implements ServiceInter {
+	@Autowired
+	private MemberDAO memberDAO;
+	@Autowired
+	private CustomerDAO customerDAO;
+	@Override
+	public void insertAll(MemberVO memberVO, CustomerVO customerVO) {
+		memberDAO.insertMember(memberVO);
+		customerDAO.insertCustomer(customerVO);
+	}
+}

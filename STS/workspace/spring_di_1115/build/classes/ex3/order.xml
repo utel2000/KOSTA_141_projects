@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- DI 대상 객체 -->
+	<bean id="korCook" class="ex3.KorCook" p:menu="된장찌개"/>
+	<bean id="indoCook" class="ex3.IndoCook" />		
+	<!--
+		DI를 적용해서 korCook을 주입받을 객체
+		이제 컨테이너에서 orderA를 getBean하면 결국 KorCook을 DI받는다.
+	-->
+<!-- 	<bean id="orderA" class="ex3.OrderCookImple"> -->
+<!-- 		<property name="cAble" ref="korCook" /> -->
+<!-- 	</bean> -->
+	<bean id="orderA" class="ex3.OrderCook" p:cAble-ref="korCook" />
+	<bean id="orderB" class="ex3.OrderCook" p:cAble-ref="indoCook" />
+</beans>

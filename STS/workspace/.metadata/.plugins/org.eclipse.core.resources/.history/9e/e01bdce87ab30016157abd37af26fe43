@@ -1,0 +1,8 @@
+package or.kosta.mvc.controller;
+
+import javax.servlet.annotation.WebFilter;
+
+@WebFilter(filterName="springSecurityFilterChain", urlPatterns={"/admin/*"})
+public class MyTestFilterController {
+
+}

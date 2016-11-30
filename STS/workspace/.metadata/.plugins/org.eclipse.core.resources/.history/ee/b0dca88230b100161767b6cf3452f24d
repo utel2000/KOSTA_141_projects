@@ -1,0 +1,27 @@
+package or.kosta.mvc.dao;
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import vo.d;
+@Repository
+public class MJoinDao {
+	@Autowired
+	private SqlSessionTemplate ss;
+	// 회원가입 데이터 처리
+	public void addMember(d vo) {
+		ss.insert("mJoin.add", vo);
+	}
+	// 아이디 중복 확인
+	public int checkId(String id) {
+		return ss.selectOne("mJoin.check", id);
+	}
+	public List<d> getList() {
+		return ss.selectList("mJoin.list");
+	}
+	// Login 처리 (id, pwd)
+	public int loginProcess(d vo) {
+		return ss.selectOne("mJoin.loginChk", vo);
+	}
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bbs1">
+	<insert id="insert" parameterType="bbs1VO">
+		insert into
+			bbs1
+		values(
+			bbs1_seq.nextVal,
+			#{sub},
+			#{writer},
+			#{pwd},
+			#{cont},
+			#{reip},
+			0,
+			sysdate
+		)
+	</insert>
+	<select id="list" parameterType="searchVO" resultType="bbs1VO">
+		select
+			num,
+			sub,
+			writer,
+			hit,
+			to_char(regdate, 'yyyy-mm-dd') regdate
+		from
+			(select
+				rownum as r_num,
+				a.*
+			from
+				(select
+					*
+				from
+					bbs1
+				order by
+					num desc
+				) a
+			)
+		where
+			r_num between #{begin} and #{end}
+	</select>
+	<select id="listTotal" resultType="int">
+		select
+			count(*) cnt
+		from
+			bbs1
+	</select>
+	<select id="detail" parameterType="int" resultType="bbs1VO">
+		select
+			num,
+			sub,
+			writer,
+			cont,
+			reip,
+			hit,
+			to_char(regdate, 'yyyy-mm-dd') regdate
+		from	
+			bbs1
+		where
+			num = #{num}
+	</select>
+	<insert id="commInsert" parameterType="bbs1CommVO">
+		insert into
+			bbs1comm
+		values(
+			bbs1comm_seq.nextVal,
+			#{kcode},
+			#{cnt},
+			#{writer},
+			#{comm},
+			#{reip},
+			sysdate
+		)
+	</insert>
+	<select id="commList" parameterType="int" resultType="bbs1CommVO">
+		select
+			num,
+			kcode,
+			cnt,
+			writer,
+			comm,
+			reip,
+			to_char(regdate, 'yyyy-mm-dd')
+		from
+			bbs1comm
+		where
+			kcode = #{kcode}
+		order by
+			1 desc
+	</select>
+	<update id="hitUpdate" parameterType="int">
+		update
+			bbs1
+		set
+			hit = hit + 1
+		where
+			num = #{num}
+	</update>
+</mapper>

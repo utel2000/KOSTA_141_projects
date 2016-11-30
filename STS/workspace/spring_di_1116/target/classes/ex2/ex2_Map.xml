@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="mapSuper" class="ex2.Ex2_Map">
+		<property name="map">
+			<map>
+				<entry key="seoul" value="50000" />
+				<entry key="inchun" value="30000" />
+				<entry key="jeju" value="150000" />
+			</map>
+		</property>
+	</bean>
+	<bean id="mapSub" parent="mapSuper">
+		<property name="map">
+			<map>
+				<entry key="daegu" value="60000" />
+				<entry key="busan" value="80000" />
+				<entry key="masan" value="10000" />
+			</map>
+		</property>
+	</bean>
+</beans>

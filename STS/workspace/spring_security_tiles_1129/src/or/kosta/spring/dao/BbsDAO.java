@@ -1,0 +1,36 @@
+package or.kosta.spring.dao;
+import java.util.List;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import vo.Bbs1CommVO;
+import vo.Bbs1VO;
+import vo.SearchVO;
+@Repository
+public class BbsDAO {
+	@Autowired
+	private SqlSessionTemplate sst;
+	// <bbs1>
+	public void insertBbs1(Bbs1VO bvo) {
+		sst.insert("bbs1.insert", bvo);
+	}
+	public List<Bbs1VO> getList(SearchVO svo) {
+		return sst.selectList("bbs1.list", svo);
+	}
+	public int getTotalCount() {
+		return sst.selectOne("bbs1.listTotal");
+	}
+	public Bbs1VO getDetail(int num) {
+		return sst.selectOne("bbs1.detail", num);
+	}
+	// <bbs1Comm>
+	public void insertComm(Bbs1CommVO bcvo) {
+		sst.insert("bbs1.commInsert", bcvo);
+	}
+	public List<Bbs1CommVO> getCommList(int kcode) {
+		return sst.selectList("bbs1.commList", kcode);
+	}
+	public void bbsHitUpdate(int num) {
+		sst.update("bbs1.hitUpdate", num);
+	}
+}

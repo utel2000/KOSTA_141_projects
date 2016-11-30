@@ -1,0 +1,5 @@
+package or.kosta.mvc.dao;
+
+public class VoteDao {
+
+}

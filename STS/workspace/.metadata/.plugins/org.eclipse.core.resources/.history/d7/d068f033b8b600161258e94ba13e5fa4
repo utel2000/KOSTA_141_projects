@@ -1,0 +1,14 @@
+package or.kosta.spring.dao;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import or.kosta.vo.CustomerVO;
+import or.kosta.vo.MemberVO;
+@Repository
+public class CustomerDAO {
+	@Autowired
+	private SqlSessionTemplate ss;
+	public void addCustomer(CustomerVO vo){
+		ss.insert("customer.customerAdd", vo);
+	}
+}

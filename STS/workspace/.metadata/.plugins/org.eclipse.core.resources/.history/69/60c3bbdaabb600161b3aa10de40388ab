@@ -1,0 +1,13 @@
+package or.kosta.spring.controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+@Controller
+public class HelloController {
+	@RequestMapping(value={"/","/hello"})
+	public ModelAndView hello() {
+		ModelAndView mav = new ModelAndView("hello");
+		mav.addObject("msg", "손수 작성한 내 첫 스프링 헬로우!");
+		return mav;
+	}
+}

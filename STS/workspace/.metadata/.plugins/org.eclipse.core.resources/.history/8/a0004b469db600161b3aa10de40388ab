@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeAliases>
+	<typeAlias type="or.kosta.vo.MemberVO" alias="mvo" />
+	<typeAlias type="or.kosta.vo.CustomerVO" alias="cvo" />
+</typeAliases>

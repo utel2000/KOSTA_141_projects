@@ -1,0 +1,18 @@
+1479180326999	Move file
+1479180701094	Rename type 'myProfile'
+1479180704006	Rename type 'myProfileImple'
+1479182363353	Delete element
+1479185521287	Rename resource 'hello.xml'
+1479186717451	Rename type 'ConstructorDemoInter'
+1479187486250	Rename resource 'hello.jsp'
+1479187495139	Rename resource 'myProfile.jsp'
+1479189284925	Rename type 'Ex1_ConstructorDemo'
+1479189289540	Rename type 'Ex1_ConstructorDemoInter'
+1479193187298	Rename resource 'order.jsp'
+1479193190323	Rename resource 'orderForm.jsp'
+1479258128516	Rename type 'Cook'
+1479259104873	Rename compilation unit 'CookInter.java'
+1479259453016	Rename type 'OrderCookInter'
+1479259459392	Rename type 'Orderable'
+1479259530867	Rename compilation unit 'OrderCookImple.java'
+1479259768482	Rename package 'src.service'

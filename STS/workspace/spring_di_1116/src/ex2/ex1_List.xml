@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="list1" class="ex2.Ex1_List">
+		<property name="items">
+			<list>
+				<value>Spring 2.0</value>
+				<value>Spring 3.0</value>
+				<value>Spring 4.0</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="list2" class="ex2.Ex1_List">
+		<property name="items2">
+			<list>
+				<value>10.11</value>
+				<value>1000.111</value>
+				<value>2323.222</value>
+			</list>
+		</property>
+	</bean>
+</beans>

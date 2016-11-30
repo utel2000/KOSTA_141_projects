@@ -1,0 +1,14 @@
+package or.kosta.spring.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import or.kosta.spring.service.ServiceInter;
+@Controller
+public class TxServiceController {
+	@Autowired
+	private ServiceInter service;
+	@RequestMapping(value="txForm")
+	public String viewForm() {
+		return "txForm
+	}
+}

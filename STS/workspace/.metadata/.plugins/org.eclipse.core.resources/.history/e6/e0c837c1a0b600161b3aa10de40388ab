@@ -1,0 +1,5 @@
+package or.kosta.spring.dao;
+
+public class CustomerDAO {
+
+}

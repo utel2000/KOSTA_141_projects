@@ -1,0 +1,5 @@
+package or.kosta.mvc.controller;
+
+public class HomeController {
+
+}

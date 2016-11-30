@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--
+		 constructor-arg: 생성자
+		 property: setter역할
+		 qualifier: 식별자
+		 lookup-method | replaced-method | namespace:uri="##other"
+		 IoC컨테이너에 담길 bean들을 정의.(DI될 객체들.)
+		 Spring은 모든 기본 값을 String(문자열)으로 본다.
+	-->
+	<bean id="greeting" class="ex1.HelloImple">
+		<property name="message" value="hello~~!"></property>
+	</bean>
+</beans>

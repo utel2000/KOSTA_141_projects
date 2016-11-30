@@ -1,0 +1,5 @@
+package or.kosta.vo;
+
+public class MemberVO {
+
+}

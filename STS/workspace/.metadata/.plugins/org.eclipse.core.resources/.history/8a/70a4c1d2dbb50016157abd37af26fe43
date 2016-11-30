@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>bbs1Form.jsp</title>
+<style>
+	#bbs1 {
+		width: 650px;
+		margin: auto;
+	}
+	#bbs1 table {
+		width: 100%;
+		border: 1px dotted #9900ff;
+	}
+	#bbs1 table .fd {
+		width:100px;
+		background-color: #b9b9ff;
+		font-weight: bold;
+		text-aligh: center;
+	}
+	#sub {
+		width: 250px;
+	}
+</style>
+<script>
+	window.onload = function() {
+		CKEDITOR.replace('cont', {
+			height: '500px',
+			filebrowserImageUploadUrl: 'imageUpload'
+		});
+	};
+</script>
+</head>
+<body>
+	
+</body>
+</html>

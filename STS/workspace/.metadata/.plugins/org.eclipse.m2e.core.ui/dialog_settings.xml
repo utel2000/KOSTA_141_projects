@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="spring_tx_1130"/>
+			<item value="test2"/>
+			<item value="test"/>
+			<item value="spring_security_tiles_1129"/>
+			<item value="spring_security_1128"/>
+			<item value="spring_mvc_filter_1126"/>
+			<item value="spring_mvc_tiles_1125"/>
+			<item value="spring_mvc_login_1123"/>
+			<item value="spring_mvc_1122"/>
+			<item value="spring_mvc_1121"/>
+			<item value="spring_aop_1119"/>
+			<item value="spring_aop_1118"/>
+			<item value="spring_di_1117"/>
+			<item value="spring_di_1116"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="spring_tx_1130"/>
+			<item value="test2"/>
+			<item value="test"/>
+			<item value="spring_security_tiles_1129"/>
+			<item value="spring_security_1128"/>
+			<item value="spring_mvc_filter_1126"/>
+			<item value="spring_mvc_tiles_1125"/>
+			<item value="spring_mvc_login_1123"/>
+			<item value="spring_mvc_1122"/>
+			<item value="spring_mvc_1121"/>
+			<item value="spring_aop_1119"/>
+			<item value="spring_aop_1118"/>
+			<item value="spring_di_1117"/>
+			<item value="spring_di_1116"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

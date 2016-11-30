@@ -1,0 +1,254 @@
+
+11월 15, 2016 12:58:21.07 NEW SESSION
+11월 15, 2016 12:58:21.07 [1115/125821:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 15, 2016 13:20:05.13 [8636:6636:1115/132005:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 15, 2016 13:47:36.32 [1115/134736:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 15, 2016 13:47:36.37 [1115/134736:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 15, 2016 13:47:36.43 [1115/134736:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+
+11월 16, 2016 07:20:33.26 NEW SESSION
+11월 16, 2016 07:20:33.26 [8024:4004:1116/072033:ERROR:gcm_store_impl.cc(627)] LevelDB remove failed: NotFound: 
+11월 16, 2016 07:20:33.26 [8024:6348:1116/072033:ERROR:mcs_client.cc(524)] GCM Update failed!
+11월 16, 2016 07:20:34.68 [1116/072034:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 16, 2016 07:21:22.73 [1116/072122:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 16, 2016 07:21:22.81 [1116/072122:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 16, 2016 07:21:22.81 [1116/072122:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+
+11월 26, 2016 08:38:53.17 NEW SESSION
+11월 26, 2016 08:38:53.17 [17096:8376:1126/083853:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 08:39:15.97 [17096:8376:1126/083915:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 08:39:27.10 [17096:11456:1126/083927:ERROR:account_tracker.cc(357)] OnGetTokenFailure: Connection failed (-106).
+11월 26, 2016 08:39:27.10 [17096:11456:1126/083927:ERROR:account_tracker.cc(357)] OnGetTokenFailure: Connection failed (-106).
+11월 26, 2016 08:39:59.99 [17096:8376:1126/083959:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 08:41:58.79 [17096:8376:1126/084158:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 08:54:38.72 [17096:8376:1126/085438:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 08:54:38.79 [17096:11456:1126/085438:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 09:03:04.59 [1126/090304:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 09:08:42.06 Vector smash protection is enabled.
+11월 26, 2016 09:09:38.84 [17096:8376:1126/090938:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 09:09:45.42 [17096:8376:1126/090945:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 26, 2016 09:27:44.32 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 26, 2016 09:27:44.33 [1126/092744:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 09:35:16.01 Vector smash protection is enabled.
+11월 26, 2016 09:35:57.60 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 26, 2016 09:35:57.61 [1126/093557:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 09:43:05.86 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.86 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.86 A Parser-blocking, cross-origin script, http://adx.naonmedia.net/adx/data/NAONMP5866N.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.86 A Parser-blocking, cross-origin script, http://adx.naonmedia.net/adx/data/NAONMP5866N.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.86 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=osen&newsId=G1110542508&site=osen.mt.interplay&page=osen_news&position=x90&tagId=JX&scriptId=iwmads-cm-1480120517956, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=osen&newsId=G1110542508&site=osen.mt.interplay&page=osen_news&position=x90&tagId=JX&scriptId=iwmads-cm-1480120517956, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/osen.mt.interplay/osen_news@x90?_4151&_5104&_5210&_5224&_5237&_5265&_5272, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/osen.mt.interplay/osen_news@x90?_4151&_5104&_5210&_5224&_5237&_5265&_5272, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://adlog.adinsight.co.kr/emnet/trs_esc.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://adlog.adinsight.co.kr/emnet/trs_esc.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.lside/hk_xports_news@x08, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.87 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.lside/hk_xports_news@x08, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.88 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.rside/hk_xports_news@x09, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.88 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.rside/hk_xports_news@x09, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:05.88 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26sm%3Dtab_htk%26ie%3Dutf8%26tab_id%3Dh%3A0%26query%3D%25EB%2582%2598%25ED%2598%25BC%25EC%259E%2590+%25EB%25B0%2595%25EC%25A0%2595%25ED%2598%2584&u=2014122900012&us=6240&s=6953, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.41 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26sm%3Dtab_htk%26ie%3Dutf8%26tab_id%3Dh%3A0%26query%3D%25EB%2582%2598%25ED%2598%25BC%25EC%259E%2590+%25EB%25B0%2595%25EC%25A0%2595%25ED%2598%2584&u=2014122900012&us=6240&s=6953, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.41 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=hk_xports&newsId=793840&site=xportsnews.hankyung.popup&page=hk_xports_news&position=x21&tagId=JX, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.41 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=hk_xports&newsId=793840&site=xportsnews.hankyung.popup&page=hk_xports_news&position=x21&tagId=JX, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.41 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.popup/hk_xports_news@x21?_4151&_5224&_5265, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.popup/hk_xports_news@x21?_4151&_5224&_5265, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://interface.interworksmedia.co.kr/am/interworks/?fmt=2&random=1480120987845&site=xportsnews.hankyung.popup&page=hk_xports_news&position=x21&query=_4151%26_5224%26_5265, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://interface.interworksmedia.co.kr/am/interworks/?fmt=2&random=1480120987845&site=xportsnews.hankyung.popup&page=hk_xports_news&position=x21&query=_4151%26_5224%26_5265, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.popup/hk_xports_news@x21?_4151&_5224&_5265&RM_Exclude=am, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.popup/hk_xports_news@x21?_4151&_5224&_5265&RM_Exclude=am, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.42 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/js/floating-1.0.1.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.43 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/js/floating-1.0.1.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.43 A Parser-blocking, cross-origin script, http://iwmedia.dl.cdn.cloudn.co.kr/js/audience.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.43 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=hk_xports&newsId=793840&site=xportsnews.hankyung.interplay&page=hk_xports_news&position=x90&tagId=JX&scriptId=iwmads-cm-1480120991961, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:43:12.43 A Parser-blocking, cross-origin script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=hk_xports&newsId=793840&site=xportsnews.hankyung.interplay&page=hk_xports_news&position=x90&tagId=JX&scriptId=iwmads-cm-1480120991961, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 26, 2016 09:54:13.22 Vector smash protection is enabled.
+11월 26, 2016 09:59:26.24 A Parser-blocking, cross-origin script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/xportsnews.hankyung.interp[WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 26, 2016 09:59:26.24 [1126/095926:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 09:59:53.05 Vector smash protection is enabled.
+11월 26, 2016 10:01:14.20 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 26, 2016 10:01:14.20 [1126/100114:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 10:10:28.25 [15920:5980:1126/101028:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 26, 2016 10:10:47.72 Vector smash protection is enabled.
+11월 26, 2016 10:11:53.55 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 26, 2016 10:11:53.55 [1126/101153:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 10:25:26.96 Vector smash protection is enabled.
+11월 26, 2016 10:27:08.01 [15920:5980:1126/102708:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 26, 2016 11:33:47.43 [17096:8376:1126/113347:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 26, 2016 11:54:30.98 [1126/115430:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 12:15:27.36 [1126/121527:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 12:52:17.55 [17096:15080:1126/125217:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 26, 2016 12:52:17.96 [17096:15080:1126/125217:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 26, 2016 12:52:19.40 [17096:15080:1126/125219:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 26, 2016 12:52:19.74 [17096:8376:1126/125219:ERROR:socket_stream.cc(210)] Closing stream with result -103
+11월 26, 2016 13:21:08.47 [17096:8376:1126/132108:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:24:08.54 [17096:8376:1126/132408:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:45:32.37 [17096:8376:1126/134532:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:45:40.89 [17096:8376:1126/134540:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:45:42.05 [17096:8376:1126/134542:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:48:10.00 [17096:8376:1126/134810:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:48:21.64 [17096:8376:1126/134821:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 26, 2016 13:57:26.03 [1126/135726:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 14:26:43.66 [1126/142643:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 16:00:44.51 [15920:5980:1126/160044:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 26, 2016 18:43:37.77 [17096:8376:1126/184337:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 26, 2016 18:51:23.59 [17096:11456:1126/185123:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 18:51:27.77 [17096:8376:1126/185127:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 26, 2016 19:27:04.99 [1126/192704:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 26, 2016 19:35:41.51 [17096:8376:1126/193541:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 19:50:03.83 [17096:8376:1126/195003:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 19:50:28.17 [17096:8376:1126/195028:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 19:51:09.75 [17096:8376:1126/195109:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 26, 2016 19:51:43.21 [17096:8376:1126/195143:ERROR:connection_handler_impl.cc(479)] Timed out waiting for GCM Protocol buffer.
+11월 26, 2016 19:54:53.37 [17096:8376:1126/195453:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 26, 2016 19:54:57.44 [17096:8376:1126/195457:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 19:58:24.09 [17096:11456:1126/195824:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 19:58:45.89 [17096:11456:1126/195845:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 19:59:27.00 [17096:11456:1126/195927:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 20:00:57.92 [17096:11456:1126/200057:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 20:03:39.76 [17096:11456:1126/200339:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 20:04:57.45 [17096:8376:1126/200457:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 26, 2016 20:09:21.36 [17096:11456:1126/200921:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 26, 2016 20:14:57.47 [17096:8376:1126/201457:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 09:13:37.51 [17096:15080:1128/091337:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:37.53 [17096:11456:1128/091337:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 28, 2016 09:13:37.81 [17096:8376:1128/091337:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 09:13:37.84 [17096:15080:1128/091337:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:38.41 [17096:15080:1128/091337:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:40.13 [17096:15080:1128/091340:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:41.59 [1128/091341:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 28, 2016 09:13:42.66 [17096:15080:1128/091342:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:44.57 [17096:8376:1128/091344:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 09:13:44.79 [17096:15080:1128/091344:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:57.77 [17096:15080:1128/091357:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:13:58.28 [17096:8376:1128/091358:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 28, 2016 09:17:50.99 [17096:15080:1128/091750:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:17:51.28 [17096:15080:1128/091751:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:17:52.28 [17096:15080:1128/091752:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:17:52.66 [17096:8376:1128/091752:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 09:18:53.62 [17096:15080:1128/091853:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:18:54.60 [17096:15080:1128/091854:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:18:54.88 [17096:15080:1128/091854:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:18:55.89 [17096:15080:1128/091855:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:20:04.90 [17096:15080:1128/092004:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:20:10.45 [17096:15080:1128/092010:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 09:20:11.45 [17096:15080:1128/092011:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 11:27:09.50 [15920:5980:1128/112709:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 28, 2016 11:28:24.88 [15920:5980:1128/112824:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 28, 2016 11:28:53.95 [15920:5980:1128/112853:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 28, 2016 11:53:22.88 [15920:5980:1128/115322:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 28, 2016 11:53:29.56 [15920:5980:1128/115329:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 345
+11월 28, 2016 12:45:51.77 [17096:8376:1128/124551:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 13:45:37.55 [17096:15080:1128/134537:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 13:45:38.01 [17096:15080:1128/134538:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 13:45:40.15 [17096:8376:1128/134540:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 13:45:40.20 [17096:15080:1128/134540:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 13:55:03.44 [1128/135503:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 28, 2016 14:29:22.76 [17096:8376:1128/142922:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 14:35:33.83 [17096:8376:1128/143533:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 15:02:05.59 [17096:11456:1128/150205:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 28, 2016 15:02:07.48 [17096:8376:1128/150207:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 15:56:01.90 [17096:8376:1128/155601:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 28, 2016 15:56:02.72 [17096:8376:1128/155602:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 18:07:38.55 [17096:15080:1128/180738:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 18:07:39.08 [17096:15080:1128/180739:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 18:07:39.89 [17096:8376:1128/180739:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 28, 2016 18:07:40.28 [17096:15080:1128/180740:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 28, 2016 18:07:40.68 [17096:8376:1128/180740:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 18:13:12.42 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.42 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.42 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.42 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.43 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, https://ssl.pstatic.net/sstatic.map/openapi/openapi_v23.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, http://wcs.naver.net/wcslog.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, http://wcs.naver.net/wcslog.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.44 A Parser-blocking, cross-origin script, http://wcs.naver.net/wcslog.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.45 A Parser-blocking, cross-origin script, http://wcs.naver.net/wcslog.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:13:12.45 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 28, 2016 18:36:11.65 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/tistory_admin/lib/jquery-1.12.4.min.js, is invoked via document.write. This may be blocked by the browser if the device has poo[17096:8376:1128/183611:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 28, 2016 18:36:12.36 [17096:8376:1128/183612:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 18:39:33.93 [1128/183933:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 28, 2016 19:14:46.76 [17096:8376:1128/191446:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 28, 2016 19:34:12.29 [17096:8376:1128/193411:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 28, 2016 19:40:03.76 [17096:8376:1128/194003:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 08:59:47.53 [17096:15080:1129/085947:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 08:59:47.59 [17096:11456:1129/085947:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 29, 2016 08:59:47.82 [17096:8376:1129/085947:ERROR:socket_stream.cc(210)] Closing stream with result -103
+11월 29, 2016 08:59:47.82 [17096:8376:1129/085947:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 08:59:47.82 [17096:15080:1129/085947:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 08:59:50.93 [17096:15080:1129/085950:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 08:59:50.93 [17096:8376:1129/085950:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 29, 2016 08:59:56.38 [17096:15080:1129/085956:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 08:59:57.38 [17096:15080:1129/085957:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 08:59:57.77 [17096:8376:1129/085957:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 29, 2016 08:59:59.87 [17096:15080:1129/085959:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 09:00:00.87 [17096:15080:1129/090000:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 09:00:01.27 [17096:8376:1129/090001:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -105
+11월 29, 2016 09:00:03.33 [1129/090003:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 14:19:36.87 [1129/141936:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 14:48:07.04 A Parser-blocking, cross-origin script, http://adtg.widerplanet.com/delivery/wjs.php?zoneid=10294&category=PAGE_CATEGORY&passback=PASSBACK_URL&cb=97079398097&charset=EUC-KR&loc=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&referer=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&title=%5B%uB300%uAD6D%uBBFC%uB2F4%uD654%5D%u6734%uB300%uD1B5%uB839%20%22%uC784%uAE30%uB2E8%uCD95%20%uD3EC%uD568%20%uC9C4%uD1F4%2C%20%uAD6D%uD68C%uC5D0%20%uB9E1%uAE34%uB2E4%22%20%3A%20%uC2A4%uD3EC%uCE20%uC870%uC120, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.04 A Parser-blocking, cross-origin script, http://adtg.widerplanet.com/delivery/wjs.php?zoneid=10294&category=PAGE_CATEGORY&passback=PASSBACK_URL&cb=97079398097&charset=EUC-KR&loc=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&referer=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&title=%5B%uB300%uAD6D%uBBFC%uB2F4%uD654%5D%u6734%uB300%uD1B5%uB839%20%22%uC784%uAE30%uB2E8%uCD95%20%uD3EC%uD568%20%uC9C4%uD1F4%2C%20%uAD6D%uD68C%uC5D0%20%uB9E1%uAE34%uB2E4%22%20%3A%20%uC2A4%uD3EC%uCE20%uC870%uC120, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.04 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.04 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.04 A Parser-blocking, cross-origin script, http://cas.criteo.com/delivery/ajs.php?ptv=10&zoneid=347904&cb=21187541706&nodis=1&charset=EUC-KR&dc=3&atfr=1&loc=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.05 A Parser-blocking, cross-origin script, http://cas.criteo.com/delivery/ajs.php?ptv=10&zoneid=347904&cb=21187541706&nodis=1&charset=EUC-KR&dc=3&atfr=1&loc=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.05 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.05 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 14:48:07.05 A Parser-blocking, cross-origin script, http://adx-exchange.toast.com/a_request?pub_code=1655973747&area_code=1471127915&pag=PAG&site_url=&page_url=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&refer=https%3A%2F%2Fsearch.naver.com%2Fsearch.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&result=&bnrs_e=&du=&rndm=0.07150531009352945&cst=, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.56 A Parser-blocking, cross-origin script, http://adx-exchange.toast.com/a_request?pub_code=1655973747&area_code=1471127915&pag=PAG&site_url=&page_url=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&refer=https%3A%2F%2Fsearch.naver.com%2Fsearch.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&result=&bnrs_e=&du=&rndm=0.07150531009352945&cst=, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.56 A Parser-blocking, cross-origin script, http://ad1.sportschosun.com/js.kti/szo/outlink_search@580_200, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.56 A Parser-blocking, cross-origin script, http://ad1.sportschosun.com/js.kti/szo/outlink_search@580_200, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://click.realclick.co.kr/ad_tpl/headcopy_tt.rc?dsn=2&mcode=c2NobzEw, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://click.realclick.co.kr/ad_tpl/headcopy_tt.rc?dsn=2&mcode=c2NobzEw, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&u=2016100400002&us=7548&s=8260, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=https%3A//search.naver.com/search.naver%3Fwhere%3Dnexearch%26query%3D%25EB%258C%2580%25EA%25B5%25AD%25EB%25AF%25BC%25EB%258B%25B4%25ED%2599%2594%26sm%3Dtop_hty%26fbm%3D2%26ie%3Dutf8&u=2016100400002&us=7548&s=8260, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://adlog.adinsight.co.kr/emnet/trs_esc.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.57 A Parser-blocking, cross-origin script, http://adlog.adinsight.co.kr/emnet/trs_esc.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.58 A Parser-blocking, cross-origin script, http://adtg.widerplanet.com/delivery/wjs.php?zoneid=10294&category=PAGE_CATEGORY&passback=PASSBACK_URL&cb=17261246688&charset=EUC-KR&loc=http%3A//sports.chosun.com/news/ntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123&referer=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&title=%27%uC0AC%uB791%uC740%27%20%uACF5%uD604%uC8FC%2C%20SNS%20%uC601%uD654%uC720%uCD9C%uB17C%uB780%20%uC0AC%uACFC%20%22%uCC38%uB2F4%uD55C%20%uC2EC%uC815%2C%20%uD798%uB4E4%uC5C8%uB2E4%22%20%3A%20%uC2A4%uD3EC%uCE20%uC870%uC120, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.58 A Parser-blocking, cross-origin script, http://adtg.widerplanet.com/delivery/wjs.php?zoneid=10294&category=PAGE_CATEGORY&passback=PASSBACK_URL&cb=17261246688&charset=EUC-KR&loc=http%3A//sports.chosun.com/news/ntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123&referer=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&title=%27%uC0AC%uB791%uC740%27%20%uACF5%uD604%uC8FC%2C%20SNS%20%uC601%uD654%uC720%uCD9C%uB17C%uB780%20%uC0AC%uACFC%20%22%uCC38%uB2F4%uD55C%20%uC2EC%uC815%2C%20%uD798%uB4E4%uC5C8%uB2E4%22%20%3A%20%uC2A4%uD3EC%uCE20%uC870%uC120, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:46.58 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.94 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.94 A Parser-blocking, cross-origin script, http://cas.criteo.com/delivery/ajs.php?ptv=10&zoneid=347904&cb=694928359&nodis=1&charset=EUC-KR&dc=3&atfr=1&loc=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.95 A Parser-blocking, cross-origin script, http://cas.criteo.com/delivery/ajs.php?ptv=10&zoneid=347904&cb=694928359&nodis=1&charset=EUC-KR&dc=3&atfr=1&loc=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.95 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.95 A Parser-blocking, cross-origin script, http://t1.daumcdn.net/adfit/static/ad.min.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.95 A Parser-blocking, cross-origin script, http://adx-exchange.toast.com/a_request?pub_code=1655973747&area_code=1471127915&pag=PAG&site_url=&page_url=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123&refer=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&result=%7B%22criteo%22%3A%221%22%7D&bnrs_e=&du=&rndm=0.3054036199372596&cst=, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.95 A Parser-blocking, cross-origin script, http://adx-exchange.toast.com/a_request?pub_code=1655973747&area_code=1471127915&pag=PAG&site_url=&page_url=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype4.htm%3Fid%3D201611230100203610013754%26ServiceDate%3D20161123&refer=http%3A%2F%2Fsports.chosun.com%2Fnews%2Fntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&result=%7B%22criteo%22%3A%221%22%7D&bnrs_e=&du=&rndm=0.3054036199372596&cst=, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.96 A Parser-blocking, cross-origin script, http://ad1.sportschosun.com/js.kti/szo/outlink_search@580_200, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.96 A Parser-blocking, cross-origin script, http://ad1.sportschosun.com/js.kti/szo/outlink_search@580_200, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.96 A Parser-blocking, cross-origin script, http://click.realclick.co.kr/ad_tpl/headcopy_tt.rc?dsn=2&mcode=c2NobzEw, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.96 A Parser-blocking, cross-origin script, http://click.realclick.co.kr/ad_tpl/headcopy_tt.rc?dsn=2&mcode=c2NobzEw, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.96 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&u=2016100400002&us=7548&s=8260, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.97 A Parser-blocking, cross-origin script, http://www.dreamsearch.or.kr/servlet/sadbn?from=http%3A//sports.chosun.com/news/ntype.htm%3Fid%3D201611300100250610017111%26servicedate%3D20161129&u=2016100400002&us=7548&s=8260, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:00:51.97 A Parser-blocking, cross-origin script, http://adlog.adinsight.co.kr/emnet/trs_esc.js, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+11월 29, 2016 15:41:23.79 A Parser-blocking, cross[17096:8376:1129/154123:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 18:09:56.78 [17096:8376:1129/180956:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 18:22:26.36 [17096:8376:1129/182226:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 19:02:40.26 [17096:11456:1129/190237:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 29, 2016 19:02:41.75 [17096:8376:1129/190241:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 19:19:38.41 [17096:8376:1129/191938:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 29, 2016 19:21:04.12 [17096:8376:1129/192104:ERROR:ssl_client_socket_impl.cc(1168)] handshake failed; returned -1, SSL error code 1, net_error -100
+11월 29, 2016 19:42:24.25 [17096:8376:1129/194223:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 19:42:36.73 [1129/194236:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 20:00:34.98 [17096:8376:1129/200034:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -21
+11월 29, 2016 20:00:36.48 [17096:8376:1129/200036:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 20:01:16.86 [17096:8376:1129/200116:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 20:02:49.43 [17096:8376:1129/200249:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 20:06:38.29 [17096:8376:1129/200638:ERROR:connection_factory_impl.cc(367)] Failed to connect to MCS endpoint with error -106
+11월 29, 2016 20:07:37.07 [17096:11456:1129/200737:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 29, 2016 20:08:02.98 [17096:11456:1129/200802:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+11월 29, 2016 20:08:04.08 [17096:15080:1129/200804:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 20:08:29.71 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+11월 29, 2016 20:08:29.73 [1129/200829:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 20:08:49.38 [17096:15080:1129/200849:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+11월 29, 2016 20:08:54.86 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 20:08:54.88 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+11월 29, 2016 20:08:54.89 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
