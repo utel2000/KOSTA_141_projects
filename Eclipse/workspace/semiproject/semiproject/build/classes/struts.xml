@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+
+		<!-- 메인페이지 파트 start -->
+		<action name="index">
+			<result>index.jsp</result>
+		</action>
+		<action name="mainpage" class="action.MainPageWikiForumListAction">
+			<result>index.jsp</result>
+		</action>
+		<!-- 메인페이지 파트 end -->
+
+		<!-- 로그인 파트 start -->
+		<action name="loginForm">
+			<result>login.jsp</result>
+		</action>
+
+		<action name="loginok" class="action.MemberLoginAction">
+			<result name="INPUT">loginE.jsp</result>
+			<result type="redirectAction">
+				<param name="actionName">mainpage</param>
+			</result>
+		</action>
+
+		<action name="idchk">
+			<result>idchk.jsp</result>
+		</action>
+
+		<action name="pwdchk">
+			<result>pwdchk.jsp</result>
+		</action>
+
+		<action name="idfind" class="action.MemberIdFindAction">
+			<result>idfind.jsp</result>
+		</action>
+
+		<action name="pwdfind" class="action.MemberPwdFindAction">
+			<result>pwdfind.jsp</result>
+		</action>
+
+		<action name="memberIdcheck" class="action.MemberCheckAction">
+			<result>ajax1Server.jsp</result>
+		</action>
+
+		<action name="logout" class="action.MemberLoginAction" method="logout">
+			<result type="redirectAction">
+				<param name="actionName">mainpage</param>
+			</result>
+		</action>
+
+		<action name="memberjoin" class="action.MemberJoinQuizAction">
+			<result name="success">memberjoin.jsp</result>
+		</action>
+
+		<action name="joinok" class="action.MemberJoinAction">
+			<result type="redirectAction">
+				<param name="actionName">mainpage</param>
+			</result>
+		</action>
+
+		<!-- 로그인 파트 _ 퀴즈 페이지 시작 -->
+		<action name="jointest" class="action.MemberJoinQuizAction">
+			<result>jointest.jsp</result>
+		</action>
+
+		<!-- 로그인 파트 _ 퀴즈 페이지 끝 -->
+
+		<!-- 로그인 파트-관리자 항목 start -->
+		<action name="managerList" class="action.ManagerListAction">
+			<result>managerList.jsp</result>
+		</action>
+
+		<action name="mypage" class="action.MemberMypageAction">
+			<result>mypage.jsp</result>
+		</action>
+
+		<action name="memberdelete" class="action.MemberDeleteAction">
+			<result type="redirectAction">
+				<param name="actionName">logout</param>
+			</result>
+		</action>
+
+		<action name="memberupdate">
+			<result>memberupdate.jsp</result>
+		</action>
+
+		<action name="updateok" class="action.MemberUpdateAction">
+			<result type="redirectAction">
+				<param name="m_id">${id}</param>
+				<param name="actionName">mypage</param>
+			</result>
+		</action>
+
+		<action name="memberDetail" class="action.MemberDetailAction">
+			<result>managerDetail.jsp</result>
+		</action>
+
+		<action name="managerdelete" class="action.ManagerDeleteAction">
+			<result type="redirectAction">
+				<param name="m_id">${id}</param>
+				<param name="actionName">managerList</param>
+			</result>
+		</action>
+		<!-- 로그인 파트-관리자 항목 end -->
+
+		<!-- 채팅 파트 -->
+		<action name="chatAdd" class="action.ChatAddAction">
+			<result type="redirectAction">
+				<param name="actionName">chatForm.jsp</param>
+			</result>
+		</action>
+		<action name="chatList" class="action.ChatListAction">
+			<result>
+				chatResult.jsp
+			</result>
+		</action>
+
+
+
+
+		<!-- 로그인 파트 end -->
+
+		<!-- 포럼 파트start -->
+		<action name="forumList" class="action.ForumListAction">
+			<result>forumIndex.jsp</result>
+		</action>
+		<action name="forumDetail" class="action.ForumDetailAction">
+			<result>forumDetail.jsp</result>
+		</action>
+		<action name="forumAddComment" class="action.ForumAddCommentAction">
+			<result type="redirectAction">
+				<param name="actionName">forumDetail</param>
+				<param name="f_num">${f_num}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+		<action name="forumDeleteComment" class="action.ForumDeleteCommentAction">
+			<result type="redirectAction">
+				<param name="actionName">forumDetail</param>
+				<param name="f_num">${f_num}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+		
+		<action name="forumModifyCommentForm_textarea" class="action.ForumModifyCommentForm_textareaAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumModifyCommentForm_buttons" class="action.ForumModifyCommentForm_buttonsAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		
+		<action name="forumOriginalCommentForm_textarea" class="action.ForumOriginalCommentForm_textareaAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumOriginalCommentForm_buttons" class="action.ForumOriginalCommentForm_buttonsAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		
+		<action name="forumModifyComment" class="action.ForumModifyCommentAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		
+		<action name="forumVoteComment" class="action.ForumVoteCommentAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumAddForm">
+			<result>forumAddForm.jsp</result>
+		</action>
+		<action name="forumAdd" class="action.ForumAddAction">
+			<result name="INPUT">forumAddForm.jsp</result>
+			<result type="redirectAction">
+				<param name="actionName">forumList</param>
+			</result>
+		</action>
+		<action name="forumSearch" class="action.ForumSearchAction">
+			<result>forumIndex.jsp</result>
+		</action>
+		<action name="schedule" class="action.ScheduleAction">
+			<result>forumIndex.jsp</result>
+		</action>
+		<!-- 포럼 파트end -->
+
+
+
+		<!-- 위키 파트start -->
+
+		<action name="wikiMainForm">
+			<result>wiki_main.jsp</result>
+		</action>
+		<action name="wikiList" class="action.WikiListAction">
+			<result>wiki_list.jsp</result>
+		</action>
+		<action name="wikiAddForm">
+			<result>wiki_add.jsp</result>
+		</action>
+		<action name="wikiAdd" class="action.WikiAddAction">
+			<result type="redirectAction">
+				<param name="actionName">wikiList</param>
+			</result>
+		</action>
+		<action name="wikiDetail" class="action.WikiDetailAction">
+			<result>wiki_detail.jsp</result>
+		</action>
+
+		<action name="fileDown" class="action.FileDownAction">
+			<result type="stream">
+				<param name="contentType"> binary/octet-stream </param>
+				<param name="contentLength"> ${contentLength} </param>
+				<param name="contentDisposition"> ${contentDisposition} </param>
+				<param name="inputName">input</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="wikiDelete" class="action.WikiDeleteAction">
+			<result type="redirectAction">
+				<param name="actionName">wikiList</param>
+			</result>
+		</action>
+		<action name="wikiUpdate" class="action.WikiUpdateAction">
+			<result type="redirectAction">
+				<param name="actionName">wikiDetail</param>
+				<param name="w_num">${num}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+
+		<action name="wikiUpdateForm" class="action.WikiUpdateFormAction">
+			<result>wiki_update.jsp</result>
+		</action>
+		<!-- 위키 파트end -->
+
+	</package>
+</struts>

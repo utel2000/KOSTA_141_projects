@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="goods">
+	<insert id="goodsIn" parameterType="gvo">
+		insert into goods
+		values(seq_goods.nextval, #{gname},
+		#{price}, #{content}, #{img}, sysdate)
+	</insert>
+	<select id="goodsList" resultType="gvo">
+		select no, gname, price, content, img,
+		to_char(redate, 'yyyy-mm-dd') redate
+		from goods order by 1 desc
+	</select>
+	<select id="goodsDetail" parameterType="int" resultType="gvo">
+		select no, gname, price, content, img,
+		to_char(redate, 'yyyy-mm-dd') redate
+		from goods where no=#{no}
+	</select>
+</mapper>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="forum">
+	<select id="totalForumList" resultType="int">
+		select
+		count(*) cnt
+		from
+		forum
+	</select>
+	<select id="forumList" parameterType="pvo" resultType="fvo">
+		<![CDATA[
+		select 
+			f.f_num f_num, 
+			f.f_subject f_subject, 
+			f.f_state f_state, 
+			to_char(f.f_date_post, 'yyyy-mm-dd') f_date_post,  
+			count(c.c_forum) cnt
+		from (
+			select 
+				f_num, 
+				f_subject, 
+				f_state, 
+				f_date_post, 
+				rownum r
+			from (
+				select 
+					f_num, 
+					f_subject, 
+					f_state, 
+					f_date_post
+				from 
+					forum  
+				order by 
+					f_state desc,
+					f_date_post desc,
+					f_num desc
+				) 
+			) f, 
+			comments c
+		where 
+			(r between #{start} and #{end}) 
+			and f.f_num=c.c_forum(+)
+		group by 
+			f.f_num, 
+			f.f_subject, 
+			f.f_state, 
+			f.f_date_post 
+		order by 
+			f_state desc,
+			f_date_post desc,
+			f_num desc
+		]]>
+	</select>
+	<select id="forumDetail" parameterType="int" resultType="fvo">
+		select
+		*
+		from
+		forum
+		where
+		f_num = #{f_num}
+	</select>
+
+
+
+
+	<select id="forumSearchNeedRefreshState" resultType="fvo">
+		select
+		f_num
+		from
+		forum
+		where
+		sysdate >= f_date_complete and
+		f_state = '진행'
+		<!-- 현재시간과 비교해서 완료로 바꾸어야할 항목들을 찾음 -->
+	</select>
+	<update id="forumRefreshState" parameterType="int">
+		update
+		forum
+		set
+		f_state = '완료'
+		where
+		f_num = #{f_num}
+	</update>
+	<!-- 현재시간과 비교해서 완료로 바꾸어야할 항목들을 변경 -->
+
+
+
+
+	<insert id="forumAdd" parameterType="fvo">
+		<if test="f_img == null">
+			insert into forum
+			values(forum_seq.nextVal, #{f_writer},
+			#{f_category}, #{f_subject}, #{f_content}, 'noimg',
+			default, sysdate,
+			sysdate+to_dsinterval('3 00:00:00'))
+		</if>
+		<if test="f_img != null">
+			insert into
+			forum
+			values
+			(forum_seq.nextVal, #{f_writer},
+			#{f_category}, #{f_subject}, #{f_content}, #{f_img},
+			default, sysdate,
+			sysdate+to_dsinterval('3 00:00:00'))
+		</if>
+	</insert>
+
+	<select id="forumSearchList" parameterType="fspvo" resultType="fvo">
+		select * from (select f_num, f_writer, f_category, f_subject, f_content, f_state, f_date_post, rownum r from forum
+		<if test="searchValue != ''">
+			<where>
+				<choose>
+					<when test="searchType2 == 1 and searchType1 == 0 ">
+						f_writer=(select m_num from member where m_id like '%' || #{searchValue} || '%')
+					</when>
+					<when test="searchType2 == 1 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_writer=(select m_num from member where m_id like '%' ||	#{searchValue} || '%')
+					</when>
+					<when test="searchType2 == 2 and searchType1 == 0 ">
+						f_subject like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 2 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_subject like '%' ||
+						#{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 3 and searchType1 == 0 ">
+						f_content like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 3 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_content like '%' ||	#{searchValue} || '%'
+					</when>
+					<otherwise></otherwise>
+				</choose>
+			</where>
+		</if>
+		<if test="searchValue == ''">
+			<where>
+				<choose>
+					<when test="searchType1 != 0">
+						f_category=#{searchType1}
+					</when>
+					<otherwise></otherwise>
+				</choose>
+			</where>
+		</if>
+		order by f_state desc, f_date_post desc, f_num desc ) where r between #{start} and #{end} order by f_state desc, f_date_post desc, f_num desc
+	</select>
+
+
+
+
+	<select id="totalForumSearchList" parameterType="fspvo"
+		resultType="int">
+		select count(*) cnt from (select f_num, f_writer, f_category,
+		f_subject, f_content, f_state, f_date_post, rownum r from forum
+		<if test="searchValue != ''">
+			<where>
+				<choose>
+					<when test="searchType2 == 1 and searchType1 == 0 ">
+						f_writer=(select m_num from member where m_id like
+						'%' || #{searchValue} || '%')
+					</when>
+					<when test="searchType2 == 1 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_writer=(select
+						m_num from member where m_id like '%' ||
+						#{searchValue} || '%')
+					</when>
+					<when test="searchType2 == 2 and searchType1 == 0 ">
+						f_subject like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 2 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_subject like '%' ||
+						#{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 3 and searchType1 == 0 ">
+						f_content like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType2 == 3 and searchType1 != 0 ">
+						f_category=#{searchType1} and f_content like '%' ||
+						#{searchValue} || '%'
+					</when>
+					<otherwise></otherwise>
+				</choose>
+			</where>
+		</if>
+		<if test="searchValue == ''">
+			<where>
+				<choose>
+					<when test="searchType1 != 0">
+						f_category=#{searchType1}
+					</when>
+					<otherwise></otherwise>
+				</choose>
+			</where>
+		</if>
+		)
+	</select>
+</mapper>

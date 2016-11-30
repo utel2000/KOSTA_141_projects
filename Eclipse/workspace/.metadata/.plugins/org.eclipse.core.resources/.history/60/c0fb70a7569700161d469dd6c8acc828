@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>exam1.jsp</title>
+</head>
+<body>
+	<input type="number" name="num1" id="num1">
+	<select name="cho">
+		<option value="">선택</option>
+		<option value="+">+선택</option>
+		<option value="-">-선택</option>
+		<option value="*">x선택</option>
+		<option value="/">%선택</option>
+	</select>
+	<input type="number" name="num2" id="num2">
+	<input type="button" value="게산하기" onclick="operRes()">
+</body>
+</html>

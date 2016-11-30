@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+		<action name="hello" class="action.HelloAction">
+			<result>hello.jsp</result>
+		</action>
+		<action name="upForm">
+			<result>upform.jsp</result>
+		</action>
+		<action name="upload_res" class="action.UploadAction">
+			<result>hello.jsp</result>
+		</action>
+		<action name="memberForm">
+			<result>memberForm.jsp</result>		
+		</action>
+		<action name="memberAdd" class="action.MemberAddAction">
+			<result>hello.jsp</result>		
+		</action>
+	</package>
+</struts>

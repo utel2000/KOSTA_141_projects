@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "chatRoom">
+	<insert id="chatAdd" parameterType="cvo">
+		insert into
+			croom
+		values (
+			croom_seq.nextVal,
+			#{u_id},
+			#{chat},
+			#{reip},
+			sysdate
+			)
+	</insert>
+	<select id="chatList" resultType="cvo">
+		select
+			num,
+			u_id,
+			chat,
+			to_char(cdate, 'yyyy-mm-dd') cdate,
+			reip
+		from
+			croom
+		order by
+			1 desc
+	</select>
+</mapper>

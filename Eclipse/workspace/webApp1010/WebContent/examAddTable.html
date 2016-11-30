@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>examAddTable</title>
+</head>
+<body>
+	<!-- examAddResult.jsp에서
+		폼에서 전송되어온 수 만큼 테이블의 row를 반복해서 출력하시오. 
+		  - 선택한 색상 값을 홀수 테이블에만 적용하시오.
+		-->
+<form method="post" action="examAddResult.jsp">
+	num : <select name="num">
+		<option value="10">10개</option>
+		<option value="20">20개</option>
+		<option value="30">30개</option>
+		<option value="40">40개</option>
+		<option value="50">50개</option>
+	</select><br />
+	color : <input type="color" name="col"><br />
+	<input type="submit" value="send">	
+	</form>
+</body>
+</html>

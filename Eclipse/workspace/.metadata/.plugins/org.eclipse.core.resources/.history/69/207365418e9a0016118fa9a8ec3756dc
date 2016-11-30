@@ -1,0 +1,46 @@
+package action;
+
+import java.util.List;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+import dao.GoodsDao;
+import vo.GoodsVO;
+
+public class FileListAction extends ActionSupport {
+	private List<GoodsVO> list;
+	private String basePath;
+	@Override
+	public String execute() throws Exception {
+		// log start
+		StringBuffer log = new StringBuffer();
+		log.append("----------\n")
+		.append("<FileListAction.java> - public class FileListAction extends ActionSupport");
+		System.out.println(log);
+		log.delete(0, log.length());
+		// log end
+		
+		list = GoodsDao.getDao().selectList();
+
+		// log start
+		System.out.println("[Log] List ½ÇÇà!");
+		// log end
+		
+		basePath = getText("file.path");
+		System.out.println("ggg"+basePath);
+		return SUCCESS;
+	}
+	public List<GoodsVO> getList() {
+		return list;
+	}
+	public void setList(List<GoodsVO> list) {
+		this.list = list;
+	}
+	public String getBasePath() {
+		return basePath;
+	}
+	public void setBasePath(String basePath) {
+		this.basePath = basePath;
+	}
+	
+}

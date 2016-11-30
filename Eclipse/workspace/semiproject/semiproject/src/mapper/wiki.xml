@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="wiki">
+
+	<select id="list" parameterType="pvo" resultType="wvo">
+		select * from
+		(select w_num, w_img, w_title, w_content, rownum r from
+		(select w.w_num, w.w_img, w.w_title, w.w_content from wikiboard w
+
+		<if test="searchType2==1">, member m</if>
+		<where>
+			<if test="searchType1!=0">
+				w.w_category = #{searchType1}
+				<if test="searchType2!=0">and </if>
+			</if>
+			<if test="searchValue!=null">
+				<choose>
+					<when test="searchType2==1">
+						w.w_update_mem=m.m_num and m.m_name like '%'||#{searchValue}||'%'</when>
+					<when test="searchType2==2">
+						w_title like '%'||#{searchValue}||'%'</when>
+					<when test="searchType2==3">
+						w_content like '%'||#{searchValue}||'%'</when>
+				</choose>
+			</if>
+		</where>
+		order by 1 desc))
+	 where r between #{start} and #{end}
+	</select>
+
+
+	<select id="total" parameterType="pvo" resultType="int">
+		select count(*) cnt from
+		(select w_num, w_img, w_title, w_content, rownum r from
+		(select w.w_num, w.w_img, w.w_title, w.w_content from wikiboard w
+
+		<if test="searchType2==1">, member m</if>
+		<where>
+			<if test="searchType1!=0">
+				w.w_category = #{searchType1}
+				<if test="searchType2!=0">and </if>
+			</if>
+			<if test="searchValue!=null">
+				<choose>
+					<when test="searchType2==1">
+						w.w_update_mem=m.m_num and m.m_name like '%'||#{searchValue}||'%'</when>
+					<when test="searchType2==2">
+						w_title like '%'||#{searchValue}||'%'</when>
+					<when test="searchType2==3">
+						w_content like '%'||#{searchValue}||'%'</when>
+				</choose>
+			</if>
+		</where>
+		order by 1 desc))
+	</select>
+
+
+	<select id="detail" parameterType="int" resultType="wvo">
+		select * from
+		wikiboard where w_num = #{w_num}
+	</select>
+
+
+	<insert id="insert" parameterType="wvo">
+		insert into wikiboard (w_num, w_title, w_content, w_category, w_rdate,
+		w_update_mem,  w_img
+			<if test="w_src!=''">
+				,w_src)
+				values(wikiboard_seq.nextval,#{w_title},#{w_content},#{w_category},sysdate,#{w_update_mem},#{w_img},#{w_src})
+			</if>
+			<if test="w_src==''">
+				)
+				values(wikiboard_seq.nextval,#{w_title},#{w_content},#{w_category},sysdate,#{w_update_mem},#{w_img})
+			</if>
+	</insert>
+
+
+
+	<delete id="delete" parameterType="int">
+		delete from wikiboard where
+		w_num=#{w_num}
+	</delete>
+
+
+
+	<update id="update" parameterType="wvo">
+		update wikiboard set
+		w_content=#{w_content},w_category=#{w_category},w_img=#{w_img},
+		w_update_mem=#{w_update_mem},w_rdate=sysdate, w_src=#{w_src} where
+		w_num=#{w_num}
+	</update>
+
+
+</mapper>

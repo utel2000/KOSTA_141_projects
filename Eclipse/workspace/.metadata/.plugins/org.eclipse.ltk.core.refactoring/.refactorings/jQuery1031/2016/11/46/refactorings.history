@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PagingVO.java&apos; to &apos;semi_project/src/vo&apos;&#x0D;&#x0A;- Original project: &apos;jQuery1031&apos;&#x0D;&#x0A;- Destination element: &apos;semi_project/src/vo&apos;&#x0D;&#x0A;- Original element: &apos;vo.PagingVO.java&apos;" description="Copy compilation unit" destination="=semi_project/src&lt;vo" element1="/src&lt;vo{PagingVO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1478430113520" units="1" version="1.0"/>
+</session>

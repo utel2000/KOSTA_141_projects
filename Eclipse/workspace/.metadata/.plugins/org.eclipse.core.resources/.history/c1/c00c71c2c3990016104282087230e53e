@@ -1,0 +1,22 @@
+package dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+import service.FactoryService;
+import vo.GoodsVO;
+
+public class GoodsDao {
+	private static GoodsDao dao;
+	public synchronized static GoodsDao getDao() {
+		if(dao == null) {
+			dao = new GoodsDao();
+		}
+		return dao;
+	}
+	public void insertGoods(GoodsVO vo) {
+		SqlSession ss = FactoryService.getFactory().openSession();
+		ss.insert("goods.goodsIn", vo);
+		ss.commit();
+		ss.close();
+	}
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="forumDetail" class="action.ForumDetailAction">
+			<result>forumDetail.jsp</result>
+		</action>
+		<action name="forumAddComment" class="action.ForumAddCommentAction">
+			<result type="redirectAction">
+				<param name="actionName">forumDetail</param>
+				<param name="f_num">${f_num}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+		<action name="forumDeleteComment" class="action.ForumDeleteCommentAction">
+			<result type="redirectAction">
+				<param name="actionName">forumDetail</param>
+				<param name="f_num">${f_num}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+		<action name="forumModifyCommentForm_textarea" class="action.ForumModifyCommentForm_textareaAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumModifyCommentForm_buttons" class="action.ForumModifyCommentForm_buttonsAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumOriginalCommentForm_textarea" class="action.ForumOriginalCommentForm_textareaAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumOriginalCommentForm_buttons" class="action.ForumOriginalCommentForm_buttonsAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumModifyComment" class="action.ForumModifyCommentAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+		<action name="forumVoteComment" class="action.ForumVoteCommentAction">
+			<result>forumComment_AjaxData.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="index">
+			<result>index.jsp</result>
+		</action>
+		<action name="loginForm">
+			<result name="success">login.jsp</result>
+		</action>
+		<action name="loginOk" class="action.LoginAction">
+			<result name="INPUT">loginE.jsp</result>
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+			</result>
+		</action>
+		<action name="logout" class="action.LoginAction" method="logout">
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+			</result>
+		</action>
+		<!-- nboard -->
+		<action name = "nBoardForm">
+			<result>nBoardForm.jsp</result>
+		</action>
+		 
+		<action name="nBoardAdd" class="action.NBoardAction">
+			<result type="redirectAction">
+				<param name="actionName">nBoardList</param>
+			</result>
+		</action>
+		
+		<action name="nBoardList" class="action.NBoardListAction">
+			<result>nBoardList.jsp</result>
+		</action>
+		
+		<action name="nBoardDetail" class="action.NBoardDetailAction">
+			<result>nBoardDetail.jsp</result>
+		</action>
+		<action name="NcommAdd" class="action.NCommAddAction">
+			<result type="redirectAction">
+				<param name="actionName">nBoardDetail</param>
+				<!--
+					View페이지로 이동하기 위해서는 반드시 필요한 파라미터가 있는데
+					forward도 아니고 리다이렉트이기 때문에 어떻게 넘길 것인가가 문제.
+					ValueStack에서의 값을 참조해서 파라미터로 넘기는 방법을 사용하기 위해서
+					$EL을 struts.xml에서 사용하도록 지원하고 있다.
+					해석) nboardDetail?num=1&nowPage=1 형식으로 전달됨!
+				-->
+				<param name="num">${dnum}</param>
+				<param name="nowPage">${nowPage}</param>
+			</result>
+		</action>
+		<action name="nBoardSearch" class="action.NBoardSearchDemoAction">
+			<result>nBoardList2.jsp</result>
+		</action>
+	</package>
+</struts>

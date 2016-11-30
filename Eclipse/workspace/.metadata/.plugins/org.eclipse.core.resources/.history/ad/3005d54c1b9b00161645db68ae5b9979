@@ -1,0 +1,28 @@
+package action;
+
+import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
+
+import vo.MiniVo;
+
+public class MiniInsertAction implements Action, Preparable, ModelDriven<MiniVo> {
+	private MiniVo mvo;
+
+	@Override
+	public String execute() throws Exception {
+		System.out.println("mvo"+mvo.getContent());
+		return null;
+	}
+	@Override
+	public MiniVo getModel() {
+		return mvo;
+	}
+
+	@Override
+	public void prepare() throws Exception {
+		mvo = new MiniVo();
+	}
+
+	
+}

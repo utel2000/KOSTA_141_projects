@@ -1,0 +1,13 @@
+package action;
+
+import com.opensymphony.xwork2.Action;
+
+public class DeleteAction implements Action{
+	private String FileName;
+	private int FileNo;
+	@Override
+	public String execute() throws Exception {
+		
+		return SUCCESS;
+	}
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="member">
+	<!-- 로그인 -->
+	<select id="loginchk" parameterType="mvo" resultType="mvo">
+		select m_id, m_num, m_name, m_email, m_img, count(*) cnt from member 
+		where m_id=#{m_id} and m_pwd=#{m_pwd}
+		group by m_id, m_num, m_name, m_email, m_img
+	</select>
+
+	<!-- 로그인 : 아이디찾기 -->
+	<select id="idfind" parameterType="mvo" resultType="String">
+		select m_id from member
+		where m_name=#{m_name} and m_email=#{m_email}
+	</select>
+	
+	<!-- 로그인 : 비밀번호찾기 -->
+	<select id="pwdfind" parameterType="mvo" resultType="String">
+		select m_pwd from member
+		where m_id=#{m_id} and m_name=#{m_name} and m_email=#{m_email}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="add" parameterType="mvo">
+		insert into member(m_num, m_id, m_pwd, m_name, m_email, m_img, m_date, m_grade) 
+		values(member_seq.nextVal, #{m_id}, #{m_pwd}, #{m_name}, #{m_email}, #{m_img}, sysdate, #{m_grade})
+	</insert>
+	
+	<!-- 회원가입 : 아이디 중복확인 -->
+	<select id="checkId" parameterType="String" resultType="int">
+		select count(*) cnt from member
+		where m_id = #{m_id}
+	</select>
+	
+	<!-- 회원 : 마이페이지(이미지) -->
+	<select id="mypageimg" parameterType="String" resultType="String">
+		select m_img from member where m_id=#{m_id}
+	</select>
+	
+	<!-- 회원 : 마이페이지(회원정보) -->
+	<select id="mypage" parameterType="String" resultType="mvo">
+		select m_name, m_id, m_email from member where m_id = #{m_id}
+	</select>
+	
+	<!-- 회원 : 정보수정(이미지) -->
+	<update id="memberupdateimg" parameterType="String">
+		update member set m_img=#{m_img} where m_id=#{m_id}
+	</update> 
+	
+	<!-- 회원 : 정보수정(회원정보) -->
+	<update id="memberupdate" parameterType="mvo">
+		update member set m_id=#{m_id}, m_pwd=#{m_pwd}, m_name=#{m_name}, m_email=#{m_email}, m_img=#{m_img}
+		where m_num=#{m_num}
+	</update>
+	
+	<!-- 회원 : 탈퇴 -->
+	<delete id="memberdelete" parameterType="int">
+		delete from member where m_num=#{m_num}
+	</delete>
+	
+	
+	<!-- 관리자 : 회원정보 -->
+	<select id="managerList" resultType="mvo" parameterType="pvo">
+		select m_num, m_id, m_name, m_email, m_date
+    	from ( select m_num, m_id, m_name, m_email, m_date from member order by 1 asc)
+	</select>
+	
+	<select id="total" resultType="int">
+		select count(*) from member
+	</select>
+	
+	<!-- 관리자 : 회원 상세보기(이미지) -->
+<!-- 	<select id="detailimg" parameterType="String" resultType="String">
+		select m_img from member where m_id=#{m_id}
+	</select> -->
+	
+	<!-- 관리자 : 회원 상세보기(회원정보) -->
+	<select id="detail" parameterType="int" resultType="mvo">
+		select * from member where m_num=#{m_num}
+	</select>
+	
+	<!-- 관리자 : 회원정보 삭제 -->
+	<delete id="managerdelete" parameterType="String">
+		delete from member where m_id=#{m_id}
+	</delete>
+
+	<select id="quizlist" resultType="qvo">
+		select * from quiz order by q_num asc
+	</select>
+
+	<select id="quizAns" resultType="qvo">
+		select q_answer from quiz order by q_num asc
+	</select>
+
+</mapper>

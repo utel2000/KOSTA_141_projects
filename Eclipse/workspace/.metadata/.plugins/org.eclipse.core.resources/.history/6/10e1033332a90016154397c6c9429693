@@ -1,0 +1,26 @@
+package test;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class Action {
+	
+	public static void main(String[] args) {
+		
+		new Thread() {
+			public void run() {
+				Timer t = new Timer(false);
+				t.scheduleAtFixedRate(new TimerTask() {
+					@Override
+					public void run() {
+						System.out.println("이것은 성공의 표식입니다.");
+					}
+				}, 0, 1000);
+			}
+		}.start();
+		System.out.println("우린 종료할게 넌 열심히 해~");
+//		TestTimer tt = new TestTimer();
+//		Thread t = new Thread();
+//		t.start();
+	}
+}

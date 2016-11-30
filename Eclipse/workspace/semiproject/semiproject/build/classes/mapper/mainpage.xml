@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mainpage">
+	<select id="wikitop5" resultType="wvo">
+		select w_num,W_TITLE, w_content, w_category, to_char(w_rdate, 'yy-MM-dd hh:mm:ss') W_RDATE, w_update_mem, w_img, w_src, rownum r from 
+		(select *  from wikiboard order by to_char(w_rdate, 'yy-MM-dd hh:mm:ss') desc) 
+		where rownum between 1 and 5 
+    </select>
+	<select id="forumtop5" parameterType="String" resultType="fvo">
+select f_num, f_writer, f_category, f_subject, f_content, f_img, f_state, to_char(f_date_post, 'yy-MM-dd hh:mm:ss') f_date_post, f_date_complete, rownum r from
+(select * from forum order by to_char(f_date_post, 'yy-MM-dd hh:mm:ss') desc)
+where f_state= #{f_state} and rownum between 1 and 5	</select>
+</mapper>

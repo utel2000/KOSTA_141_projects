@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mini">
+	<insert id="add" parameterType="minivo">
+		insert into miniboard 
+		values (seq_miniboard.nextval, #{id}, #{pwd}, #{icon}, #{cont}, #{email}, sysdate)
+	</insert>
+	<select id="all" parameterType="pvo" resultType="minivo">
+		select * 
+		from (
+			select no, icon, id, cont, wday, rownum r 
+			from (
+				select no, icon, id, cont, wday 
+            	from miniboard 
+            	order by no desc
+            	)
+            )
+		where r between #{start} and #{end}
+	</select>
+	<select id="total" resultType="int">
+		select count(*) cnt from miniboard
+	</select>
+	
+</mapper>

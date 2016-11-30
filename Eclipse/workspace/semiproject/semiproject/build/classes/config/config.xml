@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="vo.CategoryVO" alias="catvo" />
+		<typeAlias type="vo.ChatVO" alias="chatvo" />
+		<typeAlias type="vo.CommentsVO" alias="cvo" />
+		<typeAlias type="vo.CommentsVoteVO" alias="cvvo" />
+		<typeAlias type="vo.ForumVO" alias="fvo" />
+		<typeAlias type="vo.MemberVO" alias="mvo" />
+		<typeAlias type="vo.QuizVO" alias="qvo" />
+		<typeAlias type="vo.WikiVO" alias="wvo" />
+		<typeAlias type="vo.PagingVO" alias="pvo" />
+		<typeAlias type="vo.ForumVoteVO" alias="fvvo" />
+		<typeAlias type="vo.ForumCommentsVO" alias="fcvo" />
+		<typeAlias type="vo.ForumCommentsVoteVO" alias="fcvvo" />
+		<typeAlias type="vo.ForumSearchPagingVO" alias="fspvo" />
+
+	</typeAliases>
+	<environments default="">
+		<environment id="">
+			<transactionManager type="JDBC" />
+			<dataSource type="JNDI">
+				<property name="data_source" value="java:comp/env/jdbc/myora" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="mapper/mainpage.xml" />
+		<mapper resource="mapper/member.xml" />
+		<mapper resource="mapper/wiki.xml" />
+		<mapper resource="mapper/cat.xml" />
+		<mapper resource="mapper/forum.xml" />
+		<mapper resource="mapper/forumcomments.xml" />
+		<mapper resource="mapper/forumcommentsvote.xml" />
+		<mapper resource="mapper/chat.xml" />
+	</mappers>
+</configuration>

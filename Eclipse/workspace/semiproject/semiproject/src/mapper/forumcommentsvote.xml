@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="forumCommentsVote">
+	<select id="checkVoteDuplication" parameterType="fcvvo" resultType="int">
+		select
+  			count(*) cnt
+		from
+  			(
+  			select 
+			    cv_c_num
+			from
+				comments_vote
+			where
+				cv_m_num = #{cv_m_num}
+			)
+		where
+			cv_c_num = #{cv_c_num}
+	</select>
+	<insert id="addVote" parameterType="fcvvo">
+		insert into
+			comments_vote
+		values (
+			comments_vote_seq.nextVal,
+			#{cv_m_num},
+			#{cv_c_num}
+		)
+	</insert>
+</mapper>

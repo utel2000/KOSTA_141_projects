@@ -1,0 +1,37 @@
+package action;
+
+import com.opensymphony.xwork2.Action;
+
+// 비동기식으로 operRes 전송되어 올 때 응답할 Action
+// num1, num2, cho
+public class OperResAction implements Action{
+	private int num1, num2;
+	private String cho;
+	private int res;
+	@Override
+	public String execute() throws Exception {
+		// 값이 들어 왔으니 연산 하자.
+		if(cho.equals("0")){
+			res = num1 + num2;
+		} else if(cho.equals("1")){
+			res = num1 - num2;
+		} else if(cho.equals("2")){
+			res = num1 * num2;
+		} else if(cho.equals("3")){
+			res = num1 / num2;
+		}
+		return SUCCESS;
+	}
+	public int getRes() {
+		return res;
+	}
+	public void setNum1(int num1) {
+		this.num1 = num1;
+	}
+	public void setNum2(int num2) {
+		this.num2 = num2;
+	}
+	public void setCho(String cho) {
+		this.cho = cho;
+	}
+}

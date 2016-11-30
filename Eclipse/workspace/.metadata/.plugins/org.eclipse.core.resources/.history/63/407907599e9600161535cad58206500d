@@ -1,0 +1,42 @@
+package model;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import conn.MyConn;
+import cont.ActionForward;
+
+public class LoginAction implements Action {
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		// log start
+		StringBuffer log = new StringBuffer();
+		System.out.println("<LoginAction> - public ActionForward execute(HttpServletRequest request, HttpServletResponse response)");
+		// log end
+		
+		request.setCharacterEncoding("euc-kr");
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		
+		// log start
+		log.append("[Log] id : ").append(id).append("\n")
+		.append("[Log] pwd : ").append(pwd).append("\n");
+		System.out.println(log);
+		log.delete(0, log.length());
+		// log end
+		
+		Map<String, String> m = new HashMap<>();
+		m.put("id", id);
+		m.put("pwd", pwd);
+		int num = 0;
+		int num = MyConn.getConn().loginProcess(m);
+		
+		
+		
+		return new ActionForward(url, true);
+	}
+}

@@ -1,0 +1,16 @@
+package model;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import cont.ActionForward;
+
+public class LoginIDChkAction implements Action {
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		request.setCharacterEncoding("euc-kr");
+		
+		
+		return new ActionForward("idchkresult.jsp", false);
+	}
+}

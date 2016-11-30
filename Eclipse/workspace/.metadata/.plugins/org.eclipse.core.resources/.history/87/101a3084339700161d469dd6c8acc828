@@ -1,0 +1,5 @@
+package struts2_1021;
+
+public class HelloAction {
+
+}

@@ -1,0 +1,42 @@
+package action;
+
+import com.opensymphony.xwork2.Action;
+
+import vo.GoodsVO;
+
+import dao.GoodsDao;
+
+public class ShowDetailAction implements Action{
+	private String fileName, basePath;
+	public String getBasePath() {
+		return basePath;
+	}
+	public void setBasePath(String basePath) {
+		this.basePath = basePath;
+	}
+	private int fileNo;
+	private GoodsVO vo;
+	@Override
+	public String execute() throws Exception {
+			vo = GoodsDao.getDao().selectDetail(fileNo);
+		return SUCCESS;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public int getFileNo() {
+		return fileNo;
+	}
+	public void setFileNo(int fileNo) {
+		this.fileNo = fileNo;
+	}
+	public GoodsVO getVo() {
+		return vo;
+	}
+	public void setVo(GoodsVO vo) {
+		this.vo = vo;
+	}
+}

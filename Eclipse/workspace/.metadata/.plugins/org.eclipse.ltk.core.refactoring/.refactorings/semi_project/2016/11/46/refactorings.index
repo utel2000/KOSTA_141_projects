@@ -1,0 +1,26 @@
+1478428069422	Rename type 'CommentsVO'
+1478428119124	Rename resource 'comments.xml'
+1478429064459	Delete element
+1478445248621	Rename type 'ForumCommentsList'
+1478479988262	Copy elements
+1478490076431	Copy compilation unit
+1478495187339	Delete element
+1478496081181	Rename type 'ForumDetailAction'
+1478496084619	Rename type 'ForumCommentsListAction'
+1478496545611	Copy compilation unit
+1478496575305	Delete element
+1478502701374	Delete element
+1478570493451	Rename type 'ForumCommentDeleteAction'
+1478571162170	Delete element
+1478679003381	Rename resource 'ForumModifyCommentForm.jsp'
+1478679181128	Rename type 'ForumModifyCommentFormAction'
+1478689352559	Rename type 'ForumOriginalCommentForm_textarea'
+1478710711110	Rename resource 'ForumModifyCommentForm_buttons.jsp'
+1478710736454	Delete elements
+1478710802894	Rename resource 'ForumModifyComment_AjaxData.jsp'
+1478743219701	Delete element
+1478747860829	Rename type 'ForumCommentsVoteVO'
+1478753235782	Rename resource 'forumModifyComment_AjaxData.jsp'
+1478830412861	Move file
+1478850590863	Move file
+1478860606152	Copy compilation unit

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="index">
+			<result>index.jsp</result>
+		</action>
+		<action name="loginForm">
+			<result>loginForm.jsp</result>
+		</action>
+		<action name="loginOk" class="action.LoginOkAction">
+			 <!-- 로그인 처리를 위해서는 servletConfig 인터셉터를 등록 -->
+			<interceptor-ref name="servletConfig" />
+			<interceptor-ref name="prepare" />
+			<interceptor-ref name="modelDriven" />
+			<interceptor-ref name="params" />
+			<result name="INPUT">loginError.jsp</result>
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+			</result>
+		</action>
+		<action name="logout" class="action.LoginOkAction" method="logout">
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+			</result>
+		</action>
+	</package>
+</struts>

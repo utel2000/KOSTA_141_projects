@@ -1,0 +1,33 @@
+package dao;
+
+import java.sql.Connection;
+
+import conn.MyConn;
+
+public class UserDao {
+	private static UserDao dao;
+	public synchronized static UserDao getDao(){
+		if(dao==null){
+			dao = new UserDao();
+		}
+		return dao;
+	}
+	
+	public int userID(String id) {
+		// log start
+		StringBuffer log = new StringBuffer();
+		System.out.println("<UserDao> - public int userID(String id)");
+		log.append("[Log] id : ").append(id).append("\n");
+		System.out.println(log);
+		log.delete(0, log.length());
+		// log end
+		
+		int res = 0;
+		try(Connection con = MyConn.getConn();){
+			
+		}
+		
+		
+		return res;
+	}
+}

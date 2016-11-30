@@ -1,0 +1,59 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import conn.MyConn;
+
+public class UserDao {
+	private static UserDao dao;
+
+	public synchronized static UserDao getDao() {
+		if (dao == null) {
+			dao = new UserDao();
+		}
+		return dao;
+	}
+
+	public int idChk(String id) {
+		
+		// log start
+		StringBuffer log = new StringBuffer();
+		System.out.println("<UserDao> - public int userID(String id)");
+		log.append("[Log] id : ").append(id).append("\n");
+		System.out.println(log);
+		log.delete(0, log.length());
+		// log end
+
+		StringBuffer sql = new StringBuffer();
+		sql.append("select count(*) cnt ").append("from userinfo ").append("where id=?");
+		int res = 0;
+		try (Connection con = MyConn.getConn(); PreparedStatement pstmt = con.prepareStatement(sql.toString())) {
+		
+			// log start
+			log.append("[Log] sql : ").append(sql).append("\n");
+			System.out.println(log);
+			log.delete(0, log.length());
+			// log end
+
+			pstmt.setString(1, id);
+			try (ResultSet rs = pstmt.executeQuery()) {
+				if (rs.next()) {
+					res = rs.getInt("cnt");
+				}
+			} catch (SQLException ex) {
+				ex.printStackTrace();
+			}
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}		
+		
+		// log start
+		log.append("[Log] res : ").append(res).append("\n");
+		// log end
+		
+		return res;
+	}
+}

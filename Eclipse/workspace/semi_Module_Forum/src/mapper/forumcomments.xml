@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="forumComments">
+	<select id="totalCommentsList" parameterType="int" resultType="int">
+		select
+			count(*) cnt
+		from
+			comments
+		where
+			c_forum = #{f_num}
+	</select>
+	<select id="commentsList" parameterType="pvo" resultType="fcvo">
+		select 
+			c_num,
+			c_content, 
+			c_writer, 
+			to_char(c_date, 'yyyy-mm-dd') c_date,
+			c_good,
+			c_bad,
+			m_name c_writer_id
+		from (
+			select 
+				c_num,
+				c_content, 
+				c_writer, 
+				c_date,
+				c_good,
+				c_bad,
+				m_name,
+				rownum r
+			from (
+				select 
+					c.c_num, 
+					c.c_content, 
+					c.c_writer, 
+					c.c_date,
+					c.c_good,
+					c.c_bad,
+					m.m_name
+				from 
+					comments c,
+					member m
+				where
+					c.c_writer = m.m_num and
+					c.c_forum = #{pk}
+				order by 
+					c_date desc,
+					c_num desc
+				) 
+			)
+		where 
+			(r between #{start} and #{end}) 
+		order by 
+			c_date desc,
+			c_num desc
+	</select>
+	<select id="goodComment" parameterType="int" resultType="fcvo">
+		select 
+			c.c_num c_num, 
+			c.c_content c_content, 
+			c.c_writer c_writer, 
+			to_char(c.c_date, 'yyyy-mm-dd') c_date,
+			c.c_good,
+			c.c_bad c_bad,
+			m.m_name c_writer_id
+		from 
+			comments c,
+			member m
+		where
+			c.c_writer = m.m_num and
+			c.c_forum = #{pk} and
+      		c.c_good = (
+                  		select
+                    		max(c_good)
+                 		from
+                    		comments
+						where
+                    		c_forum = #{pk}
+                  		)
+	</select>
+	<select id="badComment" parameterType="int" resultType="fcvo">
+		select 
+			c.c_num c_num, 
+			c.c_content c_content, 
+			c.c_writer c_writer, 
+			to_char(c.c_date, 'yyyy-mm-dd') c_date,
+			c.c_good,
+			c.c_bad c_bad,
+			m.m_name c_writer_id
+		from 
+			comments c,
+			member m
+		where
+			c.c_writer = m.m_num and
+			c.c_forum = #{pk} and
+      		c.c_bad = (
+                  		select
+                    		max(c_bad)
+                 		from
+                    		comments
+						where
+                    		c_forum = #{pk}
+                  		)
+	</select>
+	<insert id="addComment" parameterType="fcvo">
+		insert into
+			comments
+		values (
+			comments_seq.nextVal,
+			#{c_content},
+			#{c_forum},
+			#{c_writer},
+			0,
+			0,
+			default
+			)
+	</insert>
+	<delete id="deleteComment" parameterType="int">
+		delete from
+			comments
+		where
+			c_num = #{c_num}
+	</delete>
+	<select id="commentContent" parameterType="int" resultType="String">
+		select
+			c_content
+		from
+			comments
+		where
+			c_num = #{c_num}
+	</select>
+	<update id="updateComment" parameterType="fcvo">
+		update
+			comments
+		set
+			c_content = #{c_content}
+		where
+			c_num = #{c_num}
+	</update>
+	<update id="updateVote" parameterType="fcvo">
+		update
+			comments
+		<set>
+			<choose>
+				<when test="check == 'good'">
+					c_good = c_good + 1
+				</when>
+				<otherwise>
+					c_bad = c_bad + 1
+				</otherwise>
+			</choose>
+		</set>
+		where
+			c_num = #{c_num}	
+	</update>
+	<select id="checkVote" parameterType="fcvo" resultType="int">
+		select
+			<choose>
+					<when test="check == 'good'">
+						c_good
+					</when>
+					<otherwise>
+						c_bad
+					</otherwise>
+			</choose>
+		from
+			comments
+		where
+			c_num = #{c_num}
+	</select>
+</mapper>

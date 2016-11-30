@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+		<action name="hello" class="action.HelloAction">
+			<result>hello.jsp</result>
+		</action>
+		<action name="upForm">
+			<result>upform.jsp</result>
+		</action>
+		<action name="upload_res" class="action.UploadAction">
+			<result type="redirectAction">
+				<param name="actionName">glist</param>
+			</result>
+		</action>
+		<action name="memberForm">
+			<result>memberForm.jsp</result>		
+		</action>
+		<action name="memberAdd" class="action.MemberAddAction">
+			<result>hello.jsp</result>		
+		</action>
+		<action name="glist" class="action.FileListAction">
+			<result>fileList.jsp</result>
+		</action>
+		<action name="showDetail" class="action.ShowDetailAction">
+			<result>fileDetail.jsp</result>
+		</action>
+		<action name="fileDown" class="action.FileDownAction">
+			<result type="stream">
+				<param name="contentType">
+					binary/octet-stream
+				</param>
+				<param name="contentLength">
+					${contentLength}
+				</param>
+				<param name="contentDisposition">
+					${contentDisposition}
+				</param>
+				<param name="inputName">input</param>
+				<param name="bufferSize">4096</param>				
+			</result>
+		</action>
+		<action name="fileDel" class="action.DeleteAction">
+			<result type="redirectAction">
+				<param name="actionName">glist</param>
+			</result>
+		</action>
+	</package>
+</struts>

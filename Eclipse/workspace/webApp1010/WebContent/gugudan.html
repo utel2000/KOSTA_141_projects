@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>gugudan.html</title>
+</head>
+<body>
+	<div style="width: 350px; margin: auto">
+            <form method="post" action="gugudan.jsp" id="f">
+                단 : <input type="text" name="dan" id="dan"><br />
+                <p id="danTarget"></p>
+                범위 : <select name="limit" id="limit">
+                    <option value="1">1</option>
+                    <option value="3" selected="selected">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                </select><br /><br />
+                색상 : <select name="dancol" id="dancol">
+                    <option value="pink">분홍</option>
+                    <option value="blue" selected="selected">파랑</option>
+                    <option value="green">초록</option>
+                </select><br />
+                <input type="submit" value="send">
+            </form>
+        </div>
+</body>
+</html>

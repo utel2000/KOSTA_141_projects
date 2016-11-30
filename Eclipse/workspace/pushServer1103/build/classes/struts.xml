@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="euc-kr"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="index">
+			<result>index.jsp</result>
+		</action>
+		<action name="chatForm">
+			<result>chatForm.jsp</result>
+		</action>
+		<action name="addChat" class="action.AddChatAction">
+			<result type="redirectAction">
+				<param name="actionName">loadChat</param>
+			</result>
+		</action>
+		<action name="loadChat" class="action.LoadChatAction">
+			<result>loadChat.jsp</result>
+		</action>
+		<!-- ex3 -->
+		<action name="toggle">
+			<result>ex3_toggle.jsp</result>
+		</action>
+		<!-- ex4 -->
+		<action name="unbind">
+			<result>ex4_unbind.jsp</result>
+		</action>
+		<!-- exam4 -->
+		<action name="exam4">
+			<result>exam4.jsp</result>
+		</action>
+	</package>
+</struts>

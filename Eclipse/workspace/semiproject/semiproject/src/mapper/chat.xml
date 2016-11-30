@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="chat">
+	<insert id="chatAdd" parameterType="chatvo">
+		insert into chat values(chat_seq.nextVal, #{chat_usr}, #{chat_cont}, sysdate)
+	</insert>
+	
+	<select id="chatList" resultType="chatvo">
+		select * from chat order by  4 asc    
+	</select>
+</mapper>

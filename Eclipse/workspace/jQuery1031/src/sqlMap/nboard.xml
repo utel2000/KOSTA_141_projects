@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nboard">
+	<insert id="add" parameterType="nvo">
+		insert into 
+			nboard 
+		values(
+			nboard_seq.nextVal,
+			#{usr}, 
+			#{sub}, 
+			#{cont},
+			#{icon}, 
+			#{reip}, 
+			sysdate
+			)
+	</insert>
+	<select id="list" resultType="nvo" parameterType="nvo">
+	<![CDATA[
+		select 
+			n.num num, 
+			n.sub sub, 
+			n.usr usr, 
+			n.icon icon, 
+			to_char(n.ndate, 'yyyy-mm-dd') ndate, 
+			count(c.code) cnt
+		from (
+			select 
+				num, 
+				sub, 
+				usr, 
+				icon, 
+				ndate, 
+				rownum r
+			from (
+				select 
+					num, 
+					sub, 
+					usr, 
+					icon, 
+					ndate
+				from 
+					nboard  
+				order by 
+					1 desc
+				) 
+			) n, 
+			ncomm c
+		where 
+			(r between #{start} and #{end}) 
+			and n.num=c.code(+)
+		group by 
+			n.num, 
+			n.sub, 
+			n.usr, 
+			n.icon, 
+			n.ndate
+		order by 
+			1 desc
+		]]>
+	</select>
+	<select id="total" resultType="int">
+		select 
+			count(*)
+		from 
+			nboard
+	</select>
+	<select id="detail" parameterType="int" resultType="nvo">
+		select 
+			* 
+		from 
+			nboard
+		where 
+			num = #{num}
+	</select>
+	<insert id="commAdd" parameterType="ncvo">
+		insert into
+			 ncomm
+		values (
+			ncomm_seq.nextVal, 
+			#{usr}, 
+			#{code}, 
+			#{comm}, 
+			#{icon}, 
+			#{reip}, 
+			sysdate
+			)
+	</insert>
+	<select id="commList" parameterType="int" resultType="ncvo">
+		select
+			*
+		from 
+			ncomm
+		where 
+			code = #{code}
+		order by 
+			1 desc
+	</select>
+	<select id="searchExample" parameterType="pvo" resultType="nvo">
+		select
+			*
+		from
+			nboard
+		<if test="searchValue != null">
+			<where>
+				<choose>
+					<when test="searchType==1">
+						usr like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType==2">
+						sub like '%' || #{searchValue} || '%'
+					</when>
+					<when test="searchType==3">
+						cont like '%' || #{searchValue} || '%'
+					</when>
+					<otherwise></otherwise>
+				</choose>
+			</where>
+		</if>
+		order by
+			1 desc
+	</select>
+	<update id="hit" parameterType="int">
+		update
+			nboard
+		set
+			hit = hit + 1
+		where
+			num = #{num}
+	</update>
+</mapper>
