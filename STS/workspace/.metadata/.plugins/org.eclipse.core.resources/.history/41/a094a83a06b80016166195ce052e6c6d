@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:component-scan base-package="or.kosta.mvc" />
+
+	<mvc:annotation-driven />
+	<!-- resource 폴더를 매핑(css, js, img ... : 웹에서 표현할 수 있는 자원들) -->
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	
+	<!--  Spring에 제공하는 MyBatis Template를 설정 -->
+	<bean id="ss" class="org.mybatis.spring.SqlSessionTemplate">
+		<!--  factoryBean을 DI -->
+		<constructor-arg ref="factoryBean" />
+	</bean>
+	
+	<!-- UrlBasedViewResolver를 사용해서 InternalResourceViewResolver보다 먼저 처리해서 타일즈 
+		설정을 실행하기 위한 resolver 선언 -->
+	<bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<property name="order" value="0" />
+	</bean>
+
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/tiles-definitions.xml</value>
+			</list>
+		</property>
+	</bean>
+	<!-- Bean의 이름으로 View를 사용하도록 설정(하려다가 사용하지 않음) -->
+<!-- 	<bean name="viewResolver" -->
+<!-- 		class="org.springframework.web.servlet.view.BeanNameViewResolver" -->
+<!-- 	/> -->
+	<!--  Jackson라이브러리에서 JsonView를 설정하기 위한 View -->
+	<bean name="jsonTemplate"
+		class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"
+	/>
+	<bean id="log" class="or.kosta.util.LogFactory" />
+	
+</beans>

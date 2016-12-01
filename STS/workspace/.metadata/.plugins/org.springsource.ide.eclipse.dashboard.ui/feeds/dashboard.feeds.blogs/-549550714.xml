@@ -29,6 +29,19 @@
 &lt;p&gt;Thank you for all who have contributed in any way either via Stack Overflow, GitHub Issues or other channels. Driving force for changes really has been a community and requests from it.&lt;/p&gt;</content>
   </entry>
   <entry>
+    <title>SpringOne Platform 2016 Replay: Netflix's Edge Gateway Using Zuul</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/12/01/springone-platform-2016-replay-netflix-s-edge-gateway-using-zuul" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-12-01:2718</id>
+    <updated>2016-12-01T12:03:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Mikey Cohen, Netflix&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/netflixs-edge-gateway-using-zuul"&gt;http://www.slideshare.net/SpringCentral/netflixs-edge-gateway-using-zuul&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An edge gateway is an essential piece of infrastructure for large scale cloud based services. This presentation details the purpose, benefits and use cases for an edge gateway to provide security, traffic management and cloud cross region resiliency. How a gateway can be used to enhance continuous deployment, and help testing of new service versions and get service insights and more are discussed. Philosophical and architectural approaches to what belongs in a gateway vs what should be in services will be discussed. Real examples of how gateway services, built on top of Netflix&amp;rsquo;s Open source project, Zuul, are used in front of nearly all of Netflix&amp;rsquo;s consumer facing traffic will show how gateway infrastructure is used in real highly available, massive scale services.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mHHHpxJuTAo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
     <title>Spring Tips: JTA</title>
     <link rel="alternate" href="https://spring.io/blog/2016/11/30/spring-tips-jta" />
     <category term="engineering" label="Engineering" />
@@ -1762,17 +1775,5 @@ lambda.&lt;/p&gt;
 &lt;p&gt;Exploits are continually evolving making security hard. This is compounded by the fact that the technologies we need to secure are a moving target.&lt;/p&gt;
 &lt;p&gt;In this talk we will discuss how to easily secure an application with Spring Security 4.1. We will focus on some of the new features found in Spring Security 4.1 and discuss the future direction of Spring Security.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/H94Wbd8ARKM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Spring Cloud Data Flow</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/11/16/spring-tips-spring-cloud-data-flow" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2016-11-03:2679</id>
-    <updated>2016-11-16T01:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! In this tip, we&amp;rsquo;ll quickly look at how to build stream-processing pipelines with Spring Cloud Data Flow&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GaHgRw-3K84" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

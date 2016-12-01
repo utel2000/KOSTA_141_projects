@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/util/src/service/LogFactory.java"/>
+<listEntry value="/util/src/util/LogFactory.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="service.LogFactory"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="util.LogFactory"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="util"/>
 </launchConfiguration>
