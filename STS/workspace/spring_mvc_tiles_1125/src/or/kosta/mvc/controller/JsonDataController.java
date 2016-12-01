@@ -23,7 +23,7 @@ public class JsonDataController {
 		list.add(new TestVO(4, "김길동4", "40", "사장4"));
 		list.add(new TestVO(5, "김길동5", "50", "사장5"));
 		// requestScope에 저장하기 위한 맵
-		map.addAttribute("member", list);
+		map.addAttribute("member", list); 
 		return JsonView;
 	}
 }
