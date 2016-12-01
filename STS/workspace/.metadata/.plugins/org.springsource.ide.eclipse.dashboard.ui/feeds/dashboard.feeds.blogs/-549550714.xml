@@ -5,7 +5,29 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-11-30T18:24:00Z</updated>
+  <updated>2016-12-01T17:00:51Z</updated>
+  <entry>
+    <title>Spring Statemachine 1.2.0.RC1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/12/01/spring-statemachine-1-2-0-rc1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2016-12-01:2717</id>
+    <updated>2016-12-01T17:00:51Z</updated>
+    <content type="html">&lt;p&gt;We¡¯re pleased to announce a release candicate of &lt;a href="http://projects.spring.io/spring-statemachine"&gt;Spring Statemachine 1.2.0.RC1&lt;/a&gt;. Artifacts are available from &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/statemachine/"&gt;Spring Repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What we got into this release:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Usual bug fixes and small enhancements&lt;/li&gt;
+  &lt;li&gt;New api&amp;rsquo;s for tracing and monitoring&lt;/li&gt;
+  &lt;li&gt;New monitoring sample&lt;/li&gt;
+  &lt;li&gt;Full repository config support for Redis, MongoDB and JPA&lt;/li&gt;
+  &lt;li&gt;Boot auto-config enhacements&lt;/li&gt;
+  &lt;li&gt;Lot of documentation enhacements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full changes as usual are available from &lt;a href="https://github.com/spring-projects/spring-statemachine/blob/master/docs/src/info/changelog.txt"&gt;changelog&lt;/a&gt;. We&amp;rsquo;re planning to fire up 1.2.0.RELEASE before xmas and possibly do a second release candicate if any major issues are found.&lt;/p&gt;
+&lt;p&gt;Thank you for all who have contributed in any way either via Stack Overflow, GitHub Issues or other channels. Driving force for changes really has been a community and requests from it.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: JTA</title>
     <link rel="alternate" href="https://spring.io/blog/2016/11/30/spring-tips-jta" />
@@ -1752,37 +1774,5 @@ lambda.&lt;/p&gt;
     <updated>2016-11-16T01:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi Spring fans! In this tip, we&amp;rsquo;ll quickly look at how to build stream-processing pipelines with Spring Cloud Data Flow&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GaHgRw-3K84" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - November 15th, 2016</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/11/15/this-week-in-spring-november-15th-2016" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2016-11-15:2696</id>
-    <updated>2016-11-15T20:26:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Time sure is flying! We&amp;rsquo;ve got so much to get into this week. Can you believe we&amp;rsquo;re staring down 2017? We&amp;rsquo;ve got so much to cover so let&amp;rsquo;s get to it! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I hope you&amp;rsquo;ll join Axon-framework lead Allard Buijze and I tomorrow when we introduce &lt;a href="https://spring.io/blog/2016/10/25/webinar-bootiful-cqrs-with-axon-nov-16"&gt;how to build CQRS-centric applications with the Axon Framework and Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;More SpringOne Platform 2016 talks are available, and if you&amp;rsquo;re interested in how Spring and reactive programming are coming together you&amp;rsquo;ll want to hear directly from Rossen about &lt;a href="https://spring.io/blog/2016/11/15/springone-platform-2016-replay-from-imperative-to-reactive-web-apps"&gt;where the team is starting it&amp;rsquo;s journey!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Anyone that is working in microservices, should watch this &lt;em&gt;amazing&lt;/em&gt; SpringOne Platform 2016 replay showing us how &lt;a href="https://spring.io/blog/2016/11/15/springone-platform-2016-replay-ddd-rest-domain-driven-apis-for-the-web"&gt;Oliver Gierke applies Domain Driven Design concepts to creating REST APIs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;be sure to check out this blog and the corresponding webinar from our very own Stephane Nicoll and Vaadin&amp;rsquo;s Matti Tahvonen as they look at how to &lt;a href="https://spring.io/blog/2016/11/15/vaadin-spring-1-1-build-web-uis-that-hook-right-to-your-java-backend"&gt;build a good looking web application user interface that integrates seamlessly with your backend Spring services&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring IO Platform lead Andy Wilkinson has just &lt;a href="https://spring.io/blog/2016/11/14/spring-io-platform-athens-sr1"&gt;released Spring IO Platform Athens SR1&lt;/a&gt; featuring lots of updates&lt;/li&gt;
-  &lt;li&gt;Spring Data Geode lead John Blum just released &lt;a href="https://spring.io/blog/2016/11/10/spring-data-geode-1-0-0-incubating-release-released"&gt;Spring Data Geode 1.0.0.INCUBATING-RELEASE Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Security lead Rob Winch &lt;a href="https://spring.io/blog/2016/11/10/spring-security-4-2-0-released"&gt;just announced Spring Security 4.2.0&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Data Flow co-founder &lt;a href="https://spring.io/blog/2016/11/09/spring-cloud-data-flow-1-1-rc1-released"&gt;Dr. Mark Pollack just announced Spring Cloud Data Flow 1.1 RC1 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;last week, in another installment of the Spring Tips series, we looked at how to build &lt;a href="https://spring.io/blog/2016/11/09/spring-tips-spring-cloud-stream"&gt;messaging-based microservices using Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Geode lead John Blum just released &lt;a href="https://spring.io/blog/2016/11/08/spring-boot-1-4-2-available-no"&gt;Spring Data Geode 1.0.0.INCUBATING-RELEASE Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;want to learn about event-sourcing? Take a look &lt;a href="https://spring.io/blog/2016/11/08/cqrs-and-event-sourcing-with-jakub-pilimon"&gt;at this groovy recorded Google Hangout with Jakub Pilimon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration and Spring AMQP lead Gary Russell just &lt;a href="https://spring.io/blog/2016/11/08/spring-amqp-and-spring-integration-core-java-dsl-maintenance-releases-available"&gt;announced Spring AMQP and Spring Integration Core &amp;amp; Java DSL Maintenance Releases Available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring framework lead and maestro Juergen Hoeller just announced &lt;a href="https://spring.io/blog/2016/11/08/spring-framework-5-0-m3-released"&gt;&lt;br/&gt;Spring Framework 5.0 M3 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Create a new &lt;a href="https://github.com/atomist-project-templates/spring-cloud-config-server"&gt;Spring Cloud Config Server&lt;/a&gt; with this powerful new &lt;a href="http://atomist.com"&gt;Atomist&lt;/a&gt; generator&lt;/li&gt;
-  &lt;li&gt;I&amp;rsquo;ve heard &lt;a href="https://twitter.com/craigburke1/status/798574551156326400"&gt;good things&lt;/a&gt; about &lt;a href="https://github.com/alvarosanchez/grails-spring-security-rest"&gt;Alvaro Sanchez&amp;rsquo;s Grails Spring Security REST plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Nice to see Spring Boot retain its &lt;a href="https://www.thoughtworks.com/radar/languages-and-frameworks/spring-boot"&gt;spot in the &lt;em&gt;Adopt&lt;/em&gt; column in the latest installment of the Thougthworks Radar&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;this Japanese-language post looks &lt;a href="http://kimulla.hatenablog.com/entry/2016/05/08/SpringSecurity_%E6%A8%A9%E9%99%90%E3%81%AB%E5%9F%BA%E3%81%A5%E3%81%84%E3%81%A6%E8%AA%8D%E5%8F%AF%E5%87%A6%E7%90%86%E3%82%92%E3%81%99%E3%82%8B"&gt;like it does a good job introducing Spring Security&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;this isn&amp;rsquo;t Spring-specific at all, but given that we&amp;rsquo;ve got a lot of other content this week on event-sourcing and bounded contexts and microservices, &lt;a href="http://www.russmiles.com/essais/going-events-first-for-microservices-with-event-storming-and-ddd"&gt;you might appreciate Russ Miles&amp;rsquo; latest musings on event-sourcing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;be sure to join this webinar from Tino Tereshko (big data lead, Google) and Joshua McKenty (senior director, platform engineering at Pivotal) on how to use &lt;a href="http://pivotal.io/platform/webinar/pivotal-cloud-foundry-and-google-bigquery-cloud-vision-api-10am"&gt;Google&amp;rsquo;s BigQuery API from within Pivotal Cloud Foundry running on Google Compute Engine&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

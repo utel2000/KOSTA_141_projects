@@ -1,0 +1,25 @@
+<%@page import="ex1.MyProfile"%>
+<%@page import="ex1.HelloInter"%>
+<%@page import="org.springframework.context.support.GenericXmlApplicationContext"%>
+<%@page import="org.springframework.context.ApplicationContext"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>hello.jsp</title>
+</head>
+<body>
+	<%
+		// hello.xml에 있는 모든 bean을 Spring Container에 등록하고 빈으로 생성하는 작업.
+		// 모든 빈은 싱글톤으로 생성 관리됨!
+		ApplicationContext ctx = new GenericXmlApplicationContext("ex1/ex1.xml");
+	
+		HelloInter myhello = ctx.getBean("greeting", HelloInter.class);
+		myhello.sayHello();
+		MyProfile profile = ctx.getBean("profiling", MyProfile.class);
+		System.out.println(profile.myProfile());
+	%>
+</body>
+</html>

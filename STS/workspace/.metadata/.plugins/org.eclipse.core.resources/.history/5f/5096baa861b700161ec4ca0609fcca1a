@@ -1,0 +1,31 @@
+package kosta.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
+
+import vo.TestJsonVO;
+import vo.TestVO;
+
+@Controller
+public class JsonController {
+	@Autowired
+	private View JsonView;
+	// Strinc code 로 전달되어 오는 파라미터를 인자로 정의
+	// http://localhost/spring09_0525jquery/memberJson?code=d
+	@RequestMapping(value="memberJson")
+	public View testJson1(ModelMap map,String code){
+		ModelAndView mav = new ModelAndView();
+
+		
+		return JsonView;
+	}
+}
