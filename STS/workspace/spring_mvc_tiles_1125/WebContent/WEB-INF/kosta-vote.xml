@@ -34,10 +34,10 @@
 			</list>
 		</property>
 	</bean>
-	<!-- Bean의 이름으로 View를 사용하도록 설정 -->
-	<bean name="viewResolver"
-		class="org.springframework.web.servlet.view.BeanNameViewResolver"
-	/>
+	<!-- Bean의 이름으로 View를 사용하도록 설정(하려다가 사용하지 않음) -->
+<!-- 	<bean name="viewResolver" -->
+<!-- 		class="org.springframework.web.servlet.view.BeanNameViewResolver" -->
+<!-- 	/> -->
 	<!--  Jackson라이브러리에서 JsonView를 설정하기 위한 View -->
 	<bean name="jsonTemplate"
 		class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"
