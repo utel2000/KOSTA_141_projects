@@ -18,5 +18,5 @@
 		</constructor-arg>
 	</bean>
 	
-	<bean id="autoBean" class="ex1.Ex1_AutoWiredService"  />
+	<bean id="autoBean" class="ex1.Ex1_AutoWiredService" />
 </beans>

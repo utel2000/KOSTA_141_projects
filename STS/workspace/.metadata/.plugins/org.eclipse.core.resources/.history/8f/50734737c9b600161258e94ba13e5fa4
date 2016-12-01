@@ -1,5 +1,0 @@
-package or.kosta.spring.exception;
-
-public class MyExceptionHandler {
-
-}

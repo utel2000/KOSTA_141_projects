@@ -252,3 +252,6 @@
 11월 29, 2016 20:08:54.86 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
 11월 29, 2016 20:08:54.88 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
 11월 29, 2016 20:08:54.89 [1129/200854:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+
+12월 01, 2016 07:22:58.16 NEW SESSION
+12월 01, 2016 07:22:58.16 [1201/072258:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded

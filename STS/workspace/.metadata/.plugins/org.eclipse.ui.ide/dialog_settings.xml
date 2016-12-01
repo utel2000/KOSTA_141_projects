@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Kosta141\Java\Spring\workspace\spring_aop_1118"/>
+		<item value="D:\Utility\GitHub\Workspace\KOSTA_141_projects\STS\workspace"/>
 		<item value="D:\Kosta141\Java\Spring\workspace"/>
 	</list>
 	<list key="installedFeatures">

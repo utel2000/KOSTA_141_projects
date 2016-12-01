@@ -144,7 +144,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Kosta141\Java\Spring\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Kosta141\Java\Spring\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spring_tx_1130" path="/spring_tx_1130" reloadable="true" source="org.eclipse.jst.jee.server:spring_tx_1130">
+      <Context docBase="D:\Utility\GitHub\Workspace\KOSTA_141_projects\STS\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Utility\GitHub\Workspace\KOSTA_141_projects\STS\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spring_tx_1130" path="/spring_tx_1130" reloadable="true" source="org.eclipse.jst.jee.server:spring_tx_1130">
 	<!-- Resource든 Context든 앞에 대문자 적혀 있으면 객체와 매핑 되는 녀석이기 때문에
 	해당 객체가 존재한다는 개념과 일맥 상통한다. -->
 	<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/myora" password="test00" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="mykosta"/>

@@ -1,5 +1,0 @@
-package or.kosta.spring.inter;
-
-public class MyHandlerInterceptor {
-
-}

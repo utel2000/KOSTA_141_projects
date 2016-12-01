@@ -1,4 +1,0 @@
-@CHARSET "EUC-KR";
-ul li { list-style: none}
-ul li { background-color: yellow}
-.footer{ background: orange;}

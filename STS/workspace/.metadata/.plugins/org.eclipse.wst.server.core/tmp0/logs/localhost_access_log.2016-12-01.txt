@@ -1,0 +1,7 @@
+127.0.0.1 - - [01/Dec/2016:07:22:55 +0900] "GET / HTTP/1.1" 404 1000
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:57 +0900] "GET /spring_tx_1130/ HTTP/1.1" 200 1389
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:57 +0900] "GET /spring_tx_1130/resources/js/basic.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:57 +0900] "GET /spring_tx_1130/resources/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:57 +0900] "GET /spring_tx_1130/resources/js/vote.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:57 +0900] "GET /spring_tx_1130/resources/css/basic.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2016:07:22:58 +0900] "GET /favicon.ico HTTP/1.1" 404 1022
