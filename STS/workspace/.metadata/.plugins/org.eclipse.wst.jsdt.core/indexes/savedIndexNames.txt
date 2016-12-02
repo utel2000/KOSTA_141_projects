@@ -1,5 +1,3 @@
 INDEX VERSION 1.3+D:\Utility\GitHub\Workspace\KOSTA_141_projects\STS\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 772279512.index
-205588119.index
 2247357098.index
-4051309021.index

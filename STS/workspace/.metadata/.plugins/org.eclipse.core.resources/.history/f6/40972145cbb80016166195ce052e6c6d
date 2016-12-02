@@ -1,0 +1,56 @@
+package or.kosta.mvc.handler;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.socket.CloseStatus;
+import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketMessage;
+import org.springframework.web.socket.WebSocketSession;
+import org.springframework.web.socket.handler.TextWebSocketHandler;
+
+import or.kosta.util.LogFactory;
+public class MySocketHandler extends TextWebSocketHandler {
+	@Autowired
+	private LogFactory log;
+	// 서버에 연결한 사용자들을 저장하는 리스트입니다.
+	private List<WebSocketSession> connectedUsers;
+	public MySocketHandler() {
+		connectedUsers = new ArrayList<WebSocketSession>();
+	}
+	// 클라이언트 연결 후 실행되는 메서드
+	// websocket.onopen에 의해서 호출될 때 감지됨
+	@Override
+	public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+		connectedUsers.add(session);
+		log.getLogHeader("MySocketHandler.java", "public void afterConnectionEstablished(WebSocketSession session) throws Exception");
+		
+		log.getLog("세션접속 - session.getId()", session.getId());
+		log.getLog("연결ip - session.getRemoteAddress().getHostName()", session.getRemoteAddress().getHostName());
+		log.getLog("접속자 수 - connectedUsers.size()", connectedUsers.size());
+	}
+	@Override
+	public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
+		super.handleMessage(session, message);
+		System.out.println("receive message1: " + message.toString());
+		System.out.println("receive message2: " + message.getPayload());
+		for(WebSocketSession sess : connectedUsers) {
+			sess.sendMessage(new TextMessage(message.getPayload().toString()));
+			System.out.println("Test");
+		}
+		System.out.println("접속자수2: " + connectedUsers.size());
+	}
+	// 클라이언트가 서버와 연결을 끊었을 때 실행되는 메서드
+	@Override
+	public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+		connectedUsers.remove(session);
+		for(WebSocketSession webSocketSession : connectedUsers) {
+			if(!session.getId().equals(webSocketSession.getId())) {
+				webSocketSession.sendMessage(
+						new TextMessage(
+								session.getRemoteAddress().getHostName() + "퇴장했습니다."));
+			}
+		}
+		System.out.println("접속자수3: " + connectedUsers.size());
+	}
+}

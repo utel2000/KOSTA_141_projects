@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>index2.jsp</title>
 <script>
-	var wsUri = "ws://localhost/spring_websocket_1201/websocket/echo";
+	var wsUri = "ws://localhost/spring_websocket_1202/websocket/echo";
 	function init() {
 		output = document.getElementById("output");
 	};
@@ -41,7 +41,7 @@
 		writeToScreen("Message Sent: " + message);
 		// 연결된 소켓으로 메세지를 전송
 		websocket.send(message);
-		// websocket.close();
+		websocket.close();
 	};
 	function writeToScreen(message) {
 		var pre = document.createElement("p");
@@ -58,7 +58,7 @@
 	<div style="text-align: center;">
 		<form action="">
 			<input type="button" value="send" onclick="send_message()" />
-			<input type="text" id="textID" name="message" value="" />
+			<input type="text" id="textID" name="message" value="" onsubmit="return false"/>
 		</form>
 	</div>
 	<div id="output"></div>
