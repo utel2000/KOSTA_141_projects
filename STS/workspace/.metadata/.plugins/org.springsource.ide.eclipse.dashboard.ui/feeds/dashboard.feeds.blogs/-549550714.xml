@@ -29,6 +29,32 @@
 &lt;p&gt;Thank you for all who have contributed in any way either via Stack Overflow, GitHub Issues or other channels. Driving force for changes really has been a community and requests from it.&lt;/p&gt;</content>
   </entry>
   <entry>
+    <title>Webinar Dec 8th: Awesome tools to level up your Spring Cloud architecture</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/12/01/webinar-dec-8th-awesome-tools-to-level-up-your-spring-cloud-architecture" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-12-01:2720</id>
+    <updated>2016-12-01T14:54:00Z</updated>
+    <content type="html">&lt;p&gt;Getting up and running with Spring Cloud is a breeze. But once the initial setup is done, it needs to be complemented with an ecosystem that can cope with the extra operational complexity and quality concerns. While running Spring Cloud in production for over a year, Pivotal has integrated some interesting tools for documentation, operations and testing. During this talk you will see a demo of an integrated platform based on Spring Cloud, including tools like Spring Cloud Contract, wiremock, saboteur, ELK, Spinnaker, Spring Boot Admin and more. One of these tools is a dashboard for visualising Pivotal¡¯s Spring Cloud microservice architecture, which has recently been open sourced. Documenting, testing, troubleshooting, and monitoring highly distributed systems in microservice architectures are hard. Finding quality, complementary tools in the wilds of open source can be even harder. Join this webinar for a pragmatic look at taming some of the challenges of running microservices in production.&lt;/p&gt;
+&lt;p&gt;North America&lt;br/&gt;Thursday, December 8&lt;br/&gt;10:00am PST (UTC-8 hours)&lt;br/&gt;&lt;a href="http://connect.pivotal.io/OSS_Webinar_8-Tools-Spring-Cloud-Arch_Q416_8-Awesome-Tools-for-Spring-Cloud-Architecture.html"&gt;Register Now!&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne Platform 2016 Replay: Building Modern Web Applications with Angular2</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/12/01/springone-platform-2016-replay-building-modern-web-applications-with-angular2" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-12-01:2719</id>
+    <updated>2016-12-01T13:37:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Sergi Almar&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/building-modern-web-applications-with-angular2"&gt;http://www.slideshare.net/SpringCentral/building-modern-web-applications-with-angular2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Web development has become more complex in the last few years with a plethora of frameworks to choose from and no clear direction. Join Sergi Almar in this presentation to learn why Angular2 is a good fit for Spring developers. We&amp;rsquo;ll review the Angular2 architecture and see how TypeScript allows us to build more maintable and clean applications having the benefits of a typed language. We&amp;rsquo;ll look at the Angular2 component based model, dependency injection, data binding, routing, templates&amp;hellip;to build modern web applications.&lt;/p&gt;
+&lt;p&gt;No prior AngularJS knowledge is required.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dx8fbW8cWGw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
     <title>SpringOne Platform 2016 Replay: Netflix's Edge Gateway Using Zuul</title>
     <link rel="alternate" href="https://spring.io/blog/2016/12/01/springone-platform-2016-replay-netflix-s-edge-gateway-using-zuul" />
     <category term="news" label="News and Events" />
@@ -1748,32 +1774,5 @@ lambda.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay: Building applications with Angular JS and Spring Security</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/11/21/springone-platform-2016-replay-building-applications-with-angular-js-and-spring-security" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-11-30:2714</id>
-    <updated>2016-11-21T10:35:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Dr. David Syer&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/building-applications-with-angular-js-and-spring-security"&gt;http://www.slideshare.net/SpringCentral/building-applications-with-angular-js-and-spring-security&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;In this presentation we show some nice features of Spring Security, Spring Boot and Angular JS working together to provide a pleasant and secure user experience. Things to consider are cookies, headers, native clients, various security vulnerabilities and how modern browser technology can help us to avoid them. In this series we show how nicely features of the component frameworks can be integrated simply to provide a pleasant and secure user experience. We start with a very basic single-server implementation and scale it up in stages, splitting out backend resources and authentication to separate services.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x3pYcp1LopU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay: To Spring Security 4.1 and Beyond</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/11/16/springone-platform-2016-replay-to-spring-security-4-1-and-beyond" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-11-16:2699</id>
-    <updated>2016-11-16T12:22:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speakers: Rob Winch, Joe Grandja&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/to-spring-security-41-and-beyond"&gt;http://www.slideshare.net/SpringCentral/to-spring-security-41-and-beyond&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Exploits are continually evolving making security hard. This is compounded by the fact that the technologies we need to secure are a moving target.&lt;/p&gt;
-&lt;p&gt;In this talk we will discuss how to easily secure an application with Spring Security 4.1. We will focus on some of the new features found in Spring Security 4.1 and discuss the future direction of Spring Security.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/H94Wbd8ARKM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

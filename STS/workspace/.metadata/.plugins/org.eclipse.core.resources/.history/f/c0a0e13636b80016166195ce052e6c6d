@@ -1,0 +1,5 @@
+package or.kosta.mvc.handler;
+
+public class MySocketHandler {
+
+}

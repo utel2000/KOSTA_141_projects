@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>index2.jsp</title>
+<script>
+	var wsUri = "ws://localhost/spring_websocket_1201/websocket/echo";
+	function init() {
+		output = document.getElementById("output");
+	};
+	function send_message() {
+		websocket = new WebSocket(wsUri);
+		websocket.onopen = function(evt) {
+			console.log("onopen: " + evt);
+			onOpen(evt);
+		};
+		websocket.onmessage = function(evt) {
+			console.log("onmessage: " + evt);
+			onMessage(evt);
+		};
+		websocket.onerror = function(evt) {
+			onError(evt);
+		};
+	};
+</script>
+</head>
+<body>
+	<h1 style="text-align: center;">MyWebSocket!</h1>
+	<br />
+	<div style="text-align: center;">
+		<form action="">
+			<input type="button" value="send" onclick="send_message()" />
+			<input type="text" id="textID" name="message" value="" />
+		</form>
+	</div>
+	<div id="output"></div>
+</body>
+</html>
